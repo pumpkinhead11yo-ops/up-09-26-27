@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина и оформление заказа – Техномир</title>
+  <meta name="description" content="Учебный проект: корзина и оформление заказа магазина электроники Техномир.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
+        <span>техномир.</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <nav class="header-actions" aria-label="Действия">
+        <a href="catalog.html">Поиск</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Корзина</span>
+        </nav>
+        <h1>Корзина</h1>
+        <p>Проверьте состав заказа, выберите доставку и оплату. Список товаров пока задан вручную.</p>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="container cart-layout">
+        <div class="cart-items">
+          <h2>Состав заказа</h2>
+          <article class="cart-row">
+            <a href="product.html"><img src="images/products/smartphone.jpg" alt="Смартфон Example S1"></a>
+            <div>
+              <h3><a href="product.html">Смартфон Example S1</a></h3>
+              <p>49 990 ₽ за шт. · в наличии 7 шт.</p>
+              <form action="cart.html" method="get">
+                <label for="qty-1">Количество</label>
+                <input type="number" id="qty-1" name="qty" value="1" min="1" max="7">
+                <button type="submit">Изменить</button>
+              </form>
+              <p>Сумма: 49 990 ₽</p>
+              <button type="button">Удалить товар</button>
+            </div>
+          </article>
+          <article class="cart-row">
+            <a href="product.html"><img src="images/products/headphones.jpg" alt="Наушники Example Sound"></a>
+            <div>
+              <h3><a href="product.html">Наушники Example Sound</a></h3>
+              <p>12 990 ₽ за шт. · в наличии 12 шт.</p>
+              <form action="cart.html" method="get">
+                <label for="qty-2">Количество</label>
+                <input type="number" id="qty-2" name="qty" value="1" min="1" max="12">
+                <button type="submit">Изменить</button>
+              </form>
+              <p>Сумма: 12 990 ₽</p>
+              <button type="button">Удалить товар</button>
+            </div>
+          </article>
+          <p><a href="catalog.html">Продолжить покупки</a> <button type="button">Очистить корзину</button></p>
+        </div>
+
+        <form class="checkout" id="checkout" action="track.html" method="post">
+          <h2>Оформление заказа</h2>
+
+          <section>
+            <h3>01. Получатель</h3>
+            <div>
+              <label for="buyer-name">Имя и фамилия</label>
+              <input type="text" id="buyer-name" name="name" required placeholder="Иван Иванов">
+            </div>
+            <div>
+              <label for="buyer-phone">Телефон</label>
+              <input type="tel" id="buyer-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+            </div>
+            <div>
+              <label for="buyer-email">Email</label>
+              <input type="email" id="buyer-email" name="email" required placeholder="you@example.com">
+            </div>
+          </section>
+
+          <section>
+            <h3>02. Способ доставки</h3>
+            <label><input type="radio" name="delivery" value="pickup"> Самовывоз – бесплатно</label>
+            <label><input type="radio" name="delivery" value="courier" checked> Курьер по Оренбургу – 300 ₽</label>
+            <label><input type="radio" name="delivery" value="post"> Транспортная компания – 500 ₽</label>
+          </section>
+
+          <section>
+            <h3>03. Адрес получения</h3>
+            <div>
+              <label for="city">Город</label>
+              <input type="text" id="city" name="city" value="Оренбург" required>
+            </div>
+            <div>
+              <label for="address">Адрес</label>
+              <input type="text" id="address" name="address" required placeholder="ул. Советская, д. 10">
+            </div>
+            <div>
+              <label for="comment">Комментарий к заказу</label>
+              <textarea id="comment" name="comment" rows="3" placeholder="Удобное время доставки"></textarea>
+            </div>
+          </section>
+
+          <section>
+            <h3>04. Способ оплаты</h3>
+            <label><input type="radio" name="payment" value="card_online" checked> Картой онлайн</label>
+            <label><input type="radio" name="payment" value="card_pickup"> Картой при получении</label>
+            <label><input type="radio" name="payment" value="cash"> Наличными</label>
+          </section>
+        </form>
+
+        <aside class="summary">
+          <h2>Ваш заказ</h2>
+          <p>Смартфон Example S1 × 1 – 49 990 ₽</p>
+          <p>Наушники Example Sound × 1 – 12 990 ₽</p>
+          <p>Товары: 62 980 ₽</p>
+          <p>Доставка: 300 ₽</p>
+          <p><strong>Итого: 63 280 ₽</strong></p>
+          <button type="submit" form="checkout">Оформить заказ</button>
+          <p>Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <section class="footer-top">
+        <h2>Техника, которой хочется пользоваться.</h2>
+        <form action="#" method="post">
+          <label for="subscribe-email">Письма о новинках и скидках</label>
+          <div>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
+          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
+        </article>
+        <nav aria-label="Каталог">
+          <h3>Каталог</h3>
+          <a href="catalog.html">Смартфоны и гаджеты</a>
+          <a href="catalog.html">Компьютеры и периферия</a>
+          <a href="catalog.html">Бытовая электроника</a>
+          <a href="catalog.html">Игры и консоли</a>
+          <a href="catalog.html">Аксессуары</a>
+          <a href="catalog.html">Аудио и звук</a>
+        </nav>
+        <nav aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="catalog.html">Все товары</a>
+          <a href="compare.html">Сравнение</a>
+          <a href="cart.html">Корзина</a>
+          <a href="track.html">Отслеживание заказа</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <article class="footer-contacts">
+          <h3>Магазин</h3>
+          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
+          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
+          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
+          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
+        </article>
+      </section>
+
+      <p class="footer-word">техномир*</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

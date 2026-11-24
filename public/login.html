@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход и регистрация – Техномир</title>
+  <meta name="description" content="Учебный проект: вход в личный кабинет и регистрация покупателя.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
+        <span>техномир.</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <nav class="header-actions" aria-label="Действия">
+        <a href="catalog.html">Поиск</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Вход</span>
+        </nav>
+        <h1>Добро пожаловать</h1>
+        <p>Войдите или создайте новый аккаунт. Формы пока не отправляют данные на сервер.</p>
+      </div>
+    </section>
+
+    <section class="auth">
+      <div class="container auth-layout">
+        <article class="auth-info">
+          <h2>Покупки, заказы и отзывы в одном месте</h2>
+          <p>Войдите, чтобы отслеживать доставку, быстрее оформлять заказы и сохранять историю покупок.</p>
+          <ul>
+            <li>Отслеживание статуса каждого заказа.</li>
+            <li>История покупок и повторный заказ.</li>
+            <li>Отзывы о купленной технике.</li>
+            <li>Персональные предложения магазина.</li>
+          </ul>
+        </article>
+
+        <div class="auth-forms">
+          <section>
+            <h2>Вход</h2>
+            <form action="profile.html" method="post">
+              <div>
+                <label for="login-name">Логин или email</label>
+                <input type="text" id="login-name" name="login" required placeholder="username или you@example.com">
+              </div>
+              <div>
+                <label for="login-pass">Пароль</label>
+                <input type="password" id="login-pass" name="password" required placeholder="Введите пароль">
+              </div>
+              <button type="submit">Войти</button>
+            </form>
+          </section>
+
+          <section>
+            <h2>Регистрация</h2>
+            <form action="profile.html" method="post">
+              <div>
+                <label for="reg-name">Логин</label>
+                <input type="text" id="reg-name" name="username" required minlength="3" placeholder="Минимум 3 символа">
+              </div>
+              <div>
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" name="email" required placeholder="you@example.com">
+              </div>
+              <div>
+                <label for="reg-pass">Пароль</label>
+                <input type="password" id="reg-pass" name="password" required minlength="6" placeholder="Минимум 6 символов">
+              </div>
+              <div>
+                <label for="reg-pass2">Повторите пароль</label>
+                <input type="password" id="reg-pass2" name="password2" required minlength="6" placeholder="Ещё раз">
+              </div>
+              <button type="submit">Создать аккаунт</button>
+            </form>
+          </section>
+
+          <p><a href="catalog.html">Продолжить без входа</a></p>
+          <p>Оформлять заказы можно без регистрации – аккаунт нужен для истории покупок и отзывов.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <section class="footer-top">
+        <h2>Техника, которой хочется пользоваться.</h2>
+        <form action="#" method="post">
+          <label for="subscribe-email">Письма о новинках и скидках</label>
+          <div>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
+          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
+        </article>
+        <nav aria-label="Каталог">
+          <h3>Каталог</h3>
+          <a href="catalog.html">Смартфоны и гаджеты</a>
+          <a href="catalog.html">Компьютеры и периферия</a>
+          <a href="catalog.html">Бытовая электроника</a>
+          <a href="catalog.html">Игры и консоли</a>
+          <a href="catalog.html">Аксессуары</a>
+          <a href="catalog.html">Аудио и звук</a>
+        </nav>
+        <nav aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="catalog.html">Все товары</a>
+          <a href="compare.html">Сравнение</a>
+          <a href="cart.html">Корзина</a>
+          <a href="track.html">Отслеживание заказа</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <article class="footer-contacts">
+          <h3>Магазин</h3>
+          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
+          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
+          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
+          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
+        </article>
+      </section>
+
+      <p class="footer-word">техномир*</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

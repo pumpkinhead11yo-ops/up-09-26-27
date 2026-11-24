@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель – Техномир</title>
+  <meta name="description" content="Учебный проект: админ-панель магазина электроники Техномир.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
+        <span>техномир.</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <nav class="header-actions" aria-label="Действия">
+        <a href="catalog.html">Поиск</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="admin-login">
+      <div class="container">
+        <h1>Вход в панель</h1>
+        <p>Используйте учётную запись администратора магазина. Форма пока не проверяет данные.</p>
+        <form action="admin.html" method="post">
+          <div>
+            <label for="admin-login">Логин или email</label>
+            <input type="text" id="admin-login" name="login" required placeholder="admin">
+          </div>
+          <div>
+            <label for="admin-pass">Пароль</label>
+            <input type="password" id="admin-pass" name="password" required placeholder="Введите пароль">
+          </div>
+          <button type="submit">Войти в панель</button>
+        </form>
+        <p><a href="index.html">Вернуться на сайт</a></p>
+      </div>
+    </section>
+
+    <div class="admin-layout">
+      <aside class="admin-side">
+        <nav aria-label="Разделы админ-панели">
+          <ul>
+            <li><a href="#dashboard">Обзор</a></li>
+            <li><a href="#products">Товары</a></li>
+            <li><a href="#orders">Заказы</a></li>
+            <li><a href="#categories">Категории</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#messages">Сообщения</a></li>
+            <li><a href="#users">Пользователи</a></li>
+          </ul>
+        </nav>
+        <p><a href="index.html">Открыть витрину</a> <a href="login.html">Выйти из панели</a></p>
+      </aside>
+
+      <div class="admin-main">
+        <header class="admin-top">
+          <h2>Управление магазином</h2>
+          <p>Пользователь: admin</p>
+        </header>
+
+        <section id="dashboard">
+          <h3>Обзор</h3>
+          <article class="admin-stat">
+            <h4>Товары</h4>
+            <p>54</p>
+          </article>
+          <article class="admin-stat">
+            <h4>Заказы</h4>
+            <p>24</p>
+          </article>
+          <article class="admin-stat">
+            <h4>Категории</h4>
+            <p>6</p>
+          </article>
+          <article class="admin-stat">
+            <h4>Непрочитанные сообщения</h4>
+            <p>3</p>
+          </article>
+        </section>
+
+        <section id="products">
+          <h3>Товары</h3>
+          <table>
+            <thead>
+              <tr><th>Название</th><th>Цена</th><th>Остаток</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Смартфон Example S1</td><td>49 990 ₽</td><td>7 шт.</td></tr>
+              <tr><td>Ноутбук Example Book 14</td><td>79 990 ₽</td><td>4 шт.</td></tr>
+              <tr><td>Наушники Example Sound</td><td>12 990 ₽</td><td>12 шт.</td></tr>
+            </tbody>
+          </table>
+          <button type="button">Добавить товар</button>
+        </section>
+
+        <section id="orders">
+          <h3>Заказы</h3>
+          <p>TM-00003 – в доставке, 49 990 ₽</p>
+          <p>TM-00002 – выполнен, 12 990 ₽</p>
+          <p>TM-00001 – выполнен, 21 990 ₽</p>
+        </section>
+
+        <section id="categories">
+          <h3>Категории</h3>
+          <p>Смартфоны, ноутбуки, аудио, игры, техника для дома, аксессуары.</p>
+        </section>
+
+        <section id="reviews">
+          <h3>Отзывы</h3>
+          <article>
+            <h4>Иван, 5 из 5</h4>
+            <p>Хороший смартфон, всё настроили при получении.</p>
+          </article>
+        </section>
+
+        <section id="messages">
+          <h3>Сообщения</h3>
+          <p>Сообщение от Марии: вопрос о гарантии на наушники.</p>
+        </section>
+
+        <section id="users">
+          <h3>Пользователи</h3>
+          <p>admin – администратор; alexey – покупатель.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <section class="footer-top">
+        <h2>Техника, которой хочется пользоваться.</h2>
+        <form action="#" method="post">
+          <label for="subscribe-email">Письма о новинках и скидках</label>
+          <div>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
+          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
+        </article>
+        <nav aria-label="Каталог">
+          <h3>Каталог</h3>
+          <a href="catalog.html">Смартфоны и гаджеты</a>
+          <a href="catalog.html">Компьютеры и периферия</a>
+          <a href="catalog.html">Бытовая электроника</a>
+          <a href="catalog.html">Игры и консоли</a>
+          <a href="catalog.html">Аксессуары</a>
+          <a href="catalog.html">Аудио и звук</a>
+        </nav>
+        <nav aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="catalog.html">Все товары</a>
+          <a href="compare.html">Сравнение</a>
+          <a href="cart.html">Корзина</a>
+          <a href="track.html">Отслеживание заказа</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <article class="footer-contacts">
+          <h3>Магазин</h3>
+          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
+          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
+          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
+          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
+        </article>
+      </section>
+
+      <p class="footer-word">техномир*</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

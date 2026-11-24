@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты – Техномир</title>
+  <meta name="description" content="Учебный проект: страница контактов магазина электроники Техномир.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
+        <span>техномир.</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <nav class="header-actions" aria-label="Действия">
+        <a href="catalog.html">Поиск</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Контакты</span>
+        </nav>
+        <h1>Контакты</h1>
+        <p>Приезжайте в магазин, звоните или напишите – поможем с выбором и сервисным обслуживанием.</p>
+      </div>
+    </section>
+
+    <section class="contacts-info">
+      <div class="container contacts-layout">
+        <div class="map-placeholder">Здесь будет карта с местоположением магазина</div>
+        <article class="contact-card">
+          <h2>Как с нами связаться</h2>
+          <dl>
+            <dt>Адрес магазина</dt>
+            <dd>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера», 2 этаж</dd>
+            <dt>Телефон</dt>
+            <dd><a href="tel:+73532201234">+7 (3532) 20-12-34</a></dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:info@technomir.ru">info@technomir.ru</a></dd>
+            <dt>Режим работы</dt>
+            <dd>Пн–Сб: 9:00–21:00, воскресенье: 10:00–20:00</dd>
+            <dt>Мессенджеры</dt>
+            <dd>WhatsApp и Telegram: +7 (3532) 20-12-34</dd>
+          </dl>
+          <a href="tel:+73532201234">Позвонить</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container feedback-layout">
+        <article class="feedback-form">
+          <h2>Написать нам</h2>
+          <p>Ответим на вопрос о товаре, заказе или гарантии.</p>
+          <form action="#" method="post">
+            <div>
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Иван" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div>
+              <label for="subject">Тема обращения</label>
+              <select id="subject" name="subject">
+                <option>Вопрос о товаре</option>
+                <option>Заказ и доставка</option>
+                <option>Гарантийное обслуживание</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="5" placeholder="Опишите ваш вопрос" required></textarea>
+            </div>
+            <button type="submit">Отправить сообщение</button>
+          </form>
+        </article>
+
+        <article class="support-card">
+          <h2>Поможем после покупки</h2>
+          <p>Настроим устройство, перенесём данные, ответим на вопросы по эксплуатации и примем технику на гарантийное обслуживание.</p>
+          <ul>
+            <li>Настройка и перенос данных</li>
+            <li>Гарантийный ремонт</li>
+            <li>Возврат в течение 14 дней</li>
+            <li>Консультации на весь срок гарантии</li>
+          </ul>
+          <a href="tel:+73532201234">Связаться с сервисом</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <section class="footer-top">
+        <h2>Техника, которой хочется пользоваться.</h2>
+        <form action="#" method="post">
+          <label for="subscribe-email">Письма о новинках и скидках</label>
+          <div>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
+          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
+        </article>
+        <nav aria-label="Каталог">
+          <h3>Каталог</h3>
+          <a href="catalog.html">Смартфоны и гаджеты</a>
+          <a href="catalog.html">Компьютеры и периферия</a>
+          <a href="catalog.html">Бытовая электроника</a>
+          <a href="catalog.html">Игры и консоли</a>
+          <a href="catalog.html">Аксессуары</a>
+          <a href="catalog.html">Аудио и звук</a>
+        </nav>
+        <nav aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="catalog.html">Все товары</a>
+          <a href="compare.html">Сравнение</a>
+          <a href="cart.html">Корзина</a>
+          <a href="track.html">Отслеживание заказа</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <article class="footer-contacts">
+          <h3>Магазин</h3>
+          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
+          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
+          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
+          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
+        </article>
+      </section>
+
+      <p class="footer-word">техномир*</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

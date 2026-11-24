@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сравнение товаров – Техномир</title>
+  <meta name="description" content="Учебный проект: сравнение товаров магазина электроники Техномир.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
+        <span>техномир.</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <nav class="header-actions" aria-label="Действия">
+        <a href="catalog.html">Поиск</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <a href="catalog.html">Каталог</a>
+          <span>/</span>
+          <span>Сравнение</span>
+        </nav>
+        <h1>Сравнение</h1>
+        <p>До четырёх моделей рядом: цена, рейтинг, наличие и характеристики. Товары в таблице заданы вручную.</p>
+      </div>
+    </section>
+
+    <section class="compare">
+      <div class="container">
+        <p><a href="catalog.html">Добавить товар</a> <button type="button">Очистить список</button></p>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Характеристика</th>
+              <th>Смартфон Example S1</th>
+              <th>Смартфон Example S2</th>
+              <th>Планшет Example Tab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Товар</th>
+              <td><img src="images/products/smartphone.jpg" alt="Смартфон Example S1"></td>
+              <td><img src="images/products/drone.jpg" alt="Смартфон Example S2"></td>
+              <td><img src="images/products/tablet.jpg" alt="Планшет Example Tab"></td>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <td>49 990 ₽</td>
+              <td>39 990 ₽</td>
+              <td>34 990 ₽</td>
+            </tr>
+            <tr>
+              <th>Рейтинг</th>
+              <td>4.6 из 5, 12 отзывов</td>
+              <td>4.4 из 5, 8 отзывов</td>
+              <td>4.7 из 5, 15 отзывов</td>
+            </tr>
+            <tr>
+              <th>Наличие</th>
+              <td>7 шт.</td>
+              <td>3 шт.</td>
+              <td>5 шт.</td>
+            </tr>
+            <tr>
+              <th>Экран</th>
+              <td>6.5 дюйма</td>
+              <td>6.1 дюйма</td>
+              <td>10.4 дюйма</td>
+            </tr>
+            <tr>
+              <th>Память</th>
+              <td>128 ГБ</td>
+              <td>64 ГБ</td>
+              <td>256 ГБ</td>
+            </tr>
+            <tr>
+              <th>Действия</th>
+              <td><a href="cart.html">В корзину</a> <a href="product.html">Подробнее</a></td>
+              <td><a href="cart.html">В корзину</a> <a href="product.html">Подробнее</a></td>
+              <td><a href="cart.html">В корзину</a> <a href="product.html">Подробнее</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <section class="footer-top">
+        <h2>Техника, которой хочется пользоваться.</h2>
+        <form action="#" method="post">
+          <label for="subscribe-email">Письма о новинках и скидках</label>
+          <div>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
+          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
+        </article>
+        <nav aria-label="Каталог">
+          <h3>Каталог</h3>
+          <a href="catalog.html">Смартфоны и гаджеты</a>
+          <a href="catalog.html">Компьютеры и периферия</a>
+          <a href="catalog.html">Бытовая электроника</a>
+          <a href="catalog.html">Игры и консоли</a>
+          <a href="catalog.html">Аксессуары</a>
+          <a href="catalog.html">Аудио и звук</a>
+        </nav>
+        <nav aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="catalog.html">Все товары</a>
+          <a href="compare.html">Сравнение</a>
+          <a href="cart.html">Корзина</a>
+          <a href="track.html">Отслеживание заказа</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <article class="footer-contacts">
+          <h3>Магазин</h3>
+          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
+          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
+          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
+          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
+        </article>
+      </section>
+
+      <p class="footer-word">техномир*</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

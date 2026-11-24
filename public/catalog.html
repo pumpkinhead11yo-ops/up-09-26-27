@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог – Техномир</title>
+  <meta name="description" content="Учебный проект: страница каталога магазина электроники Техномир.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
+        <span>техномир.</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <nav class="header-actions" aria-label="Действия">
+        <a href="catalog.html">Поиск</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Каталог</span>
+        </nav>
+        <h1>Каталог</h1>
+        <p>Смартфоны, компьютеры, звук и техника для дома. Пока товары заданы вручную, фильтры заработают позже.</p>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container catalog-layout">
+        <aside class="filters" aria-label="Фильтры каталога">
+          <h2>Фильтры</h2>
+          <form>
+            <div>
+              <label for="catalog-search">Поиск</label>
+              <input type="search" id="catalog-search" name="q" placeholder="Например, ноутбук">
+            </div>
+            <fieldset>
+              <legend>Категория</legend>
+              <label><input type="checkbox" name="category" value="smartphones"> Смартфоны</label>
+              <label><input type="checkbox" name="category" value="laptops"> Ноутбуки</label>
+              <label><input type="checkbox" name="category" value="audio"> Аудио</label>
+              <label><input type="checkbox" name="category" value="gaming"> Игры</label>
+            </fieldset>
+            <fieldset>
+              <legend>Цена, ₽</legend>
+              <label for="price-from">От</label>
+              <input type="number" id="price-from" name="min" placeholder="0">
+              <label for="price-to">До</label>
+              <input type="number" id="price-to" name="max" placeholder="200 000">
+            </fieldset>
+            <label><input type="checkbox" name="in_stock" checked> Только в наличии</label>
+            <button type="reset">Сбросить фильтры</button>
+          </form>
+        </aside>
+
+        <div class="catalog-products">
+          <div class="catalog-toolbar">
+            <label for="sorting">Сортировка</label>
+            <select id="sorting" name="sort">
+              <option>По популярности</option>
+              <option>Сначала дешевле</option>
+              <option>Сначала дороже</option>
+              <option>По названию</option>
+            </select>
+            <p>Найдено товаров: 8</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="product-card">
+              <img src="images/products/smartphone.jpg" alt="Смартфон">
+              <h3>Смартфон Example S1</h3>
+              <p>49 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/laptop.jpg" alt="Ноутбук">
+              <h3>Ноутбук Example Book 14</h3>
+              <p>79 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/headphones.jpg" alt="Наушники">
+              <h3>Наушники Example Sound</h3>
+              <p>12 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/console.jpg" alt="Игровая консоль">
+              <h3>Консоль Example Play</h3>
+              <p>54 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/monitor.jpg" alt="Монитор">
+              <h3>Монитор Example View 24</h3>
+              <p>21 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/tablet.jpg" alt="Планшет">
+              <h3>Планшет Example Tab</h3>
+              <p>34 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/smartwatch.jpg" alt="Смарт-часы">
+              <h3>Смарт-часы Example Watch</h3>
+              <p>16 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+            <article class="product-card">
+              <img src="images/products/keyboard.jpg" alt="Клавиатура">
+              <h3>Клавиатура Example Type</h3>
+              <p>7 990 ₽</p>
+              <button type="button">В корзину</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <section class="footer-top">
+        <h2>Техника, которой хочется пользоваться.</h2>
+        <form action="#" method="post">
+          <label for="subscribe-email">Письма о новинках и скидках</label>
+          <div>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
+          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
+        </article>
+        <nav aria-label="Каталог">
+          <h3>Каталог</h3>
+          <a href="catalog.html">Смартфоны и гаджеты</a>
+          <a href="catalog.html">Компьютеры и периферия</a>
+          <a href="catalog.html">Бытовая электроника</a>
+          <a href="catalog.html">Игры и консоли</a>
+          <a href="catalog.html">Аксессуары</a>
+          <a href="catalog.html">Аудио и звук</a>
+        </nav>
+        <nav aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="catalog.html">Все товары</a>
+          <a href="compare.html">Сравнение</a>
+          <a href="cart.html">Корзина</a>
+          <a href="track.html">Отслеживание заказа</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <article class="footer-contacts">
+          <h3>Магазин</h3>
+          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
+          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
+          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
+          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
+        </article>
+      </section>
+
+      <p class="footer-word">техномир*</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
