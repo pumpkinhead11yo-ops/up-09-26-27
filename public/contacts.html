@@ -1,168 +1,358 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru" data-theme="light"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Контакты – Техномир</title>
-  <meta name="description" content="Учебный проект: страница контактов магазина электроники Техномир.">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Контакты магазина «Техномир»: Оренбург, ТРЦ «Территория Севера», пр-кт Дзержинского, 23. Телефон, email, режим работы, карта и форма обратной связи.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/pages.css">
 </head>
-<body>
-    <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">
-        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
-        <span>техномир.</span>
+<body class="page-contacts is-loaded"><div class="bg-scene" aria-hidden="true">
+    <span class="bg-blob bg-blob-1" style="transform: translate3d(0px, 0px, 0px);"></span>
+    <span class="bg-blob bg-blob-2" style="transform: translate3d(0px, 0px, 0px);"></span>
+    <span class="bg-blob bg-blob-3" style="transform: translate3d(0px, 0px, 0px);"></span></div>
+
+  <header id="shapka">
+      <div class="header" id="shapka-bar">
+        <div class="box shapka-in">
+          
+    <a class="brand " href="/" aria-label="Техномир – на главную">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 34 34" fill="none">
+          <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+          <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+        </svg>
+      </span>
+      <span class="brand-word">техномир<span>.</span></span>
+    </a>
+
+          <nav class="nav" aria-label="Основная навигация"><a class="nav-link " href="/"><span>Главная</span></a><a class="nav-link " href="/catalog.html"><span>Каталог</span></a><a class="nav-link " href="/about.html"><span>О нас</span></a><a class="nav-link is-active" href="/contacts.html"><span>Контакты</span></a></nav>
+
+          <div class="shapka-acts">
+            <button class="icon-btn" type="button" data-search-open="" aria-label="Поиск" title="Поиск">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+            </button>
+            <a class="icon-btn cmp-link" href="/compare.html" title="Сравнение" aria-label="Сравнение товаров">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg><span class="action-count count-srav is-empty">0</span>
+            </a>
+            <button class="icon-btn theme-toggle" type="button" data-theme-toggle="" aria-label="Тёмная тема" title="Тёмная тема" aria-pressed="false">
+              <span class="theme-moon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="moon" class="lucide lucide-moon" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></span>
+              <span class="theme-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sun" class="lucide lucide-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span>
+            </button>
+            <a class="icon-btn login-btn" href="/login.html" title="Войти" aria-label="Войти">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
       </a>
-      <nav class="main-nav" aria-label="Основная навигация">
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
-      </nav>
-      <nav class="header-actions" aria-label="Действия">
-        <a href="catalog.html">Поиск</a>
-        <a href="compare.html">Сравнение</a>
-        <a href="cart.html">Корзина</a>
-        <a href="login.html">Войти</a>
-      </nav>
-    </div>
-  </header>
+            <a class="cart-btn" href="/cart.html" aria-label="Корзина">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-bag" class="lucide lucide-shopping-bag" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="cart-btn-text">Корзина</span>
+              <span class="cart-count is-empty">0</span>
+            </a>
+            <button class="burger" id="burger-btn" type="button" aria-label="Меню" aria-expanded="false">
+              <span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="menu-head">
+          <span class="mono">Навигация</span>
+          <span class="mono">Оренбург · 09:00–21:00</span>
+        </div>
+        <nav class="menu-nav" aria-label="Мобильная навигация">
+          
+            <a class="menu-link" href="/" style="--i:0">
+              <span>Главная</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+            <a class="menu-link" href="/catalog.html" style="--i:1">
+              <span>Каталог</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+            <a class="menu-link" href="/about.html" style="--i:2">
+              <span>О нас</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+            <a class="menu-link" href="/contacts.html" style="--i:3">
+              <span>Контакты</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+          <a class="menu-link" href="/compare.html" style="--i:4">
+            <span>Сравнение</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </a>
+          <a class="menu-link" href="/track.html" style="--i:5">
+            <span>Отследить заказ</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </a>
+          <a class="menu-link" href="/login.html" style="--i:6">
+              <span>Войти в аккаунт</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+        </nav>
+        <div class="menu-foot">
+          <a href="tel:+73532201234"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +7 (3532) 20-12-34</a>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> ТРЦ «Территория Севера», пр-кт Дзержинского, 23</span>
+        </div>
+      </div>
+
+      <div class="poisk-panel" id="poisk-panel" aria-hidden="true">
+        <div class="box search-inner">
+          <div class="search-head">
+            <button class="icon-btn icon-btn-dark" type="button" data-search-close="" aria-label="Закрыть поиск"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+          </div>
+          <form class="search-form" action="/catalog.html" method="get" role="search">
+            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
+            <input type="search" name="q" placeholder="Смартфон, ноутбук, наушники…" aria-label="Поиск по каталогу" autocomplete="off">
+            <button class="btn btn-acid" type="submit">Найти <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+          </form>
+          <div class="search-tags">
+            <span class="mono">Популярное:</span>
+            <a href="/catalog.html?q=смартфон">смартфоны</a>
+            <a href="/catalog.html?q=ноутбук">ноутбуки</a>
+            <a href="/catalog.html?q=наушники">наушники</a>
+            <a href="/catalog.html?q=телевизор">телевизоры</a>
+            <a href="/catalog.html?q=консоль">консоли</a>
+          </div>
+        </div>
+      </div></header>
 
   <main>
-    <section class="page-header">
-      <div class="container">
-        <nav class="breadcrumbs" aria-label="Хлебные крошки">
-          <a href="index.html">Главная</a>
-          <span>/</span>
-          <span>Контакты</span>
-        </nav>
-        <h1>Контакты</h1>
-        <p>Приезжайте в магазин, звоните или напишите – поможем с выбором и сервисным обслуживанием.</p>
+    <section class="page-hero">
+      <div class="box hero-in">
+        <div>
+          <nav class="kroshki" aria-label="Хлебные крошки">
+            <a href="/">Главная</a>
+            <span class="sep">/</span>
+            <span aria-current="page">Контакты</span>
+          </nav>
+          <h1-bound="" class="is-in">Контакты</h1>
+          <p class="hero-text is-in" style="--d:70ms"-bound="">
+            Приезжайте в магазин, звоните или напишите – поможем с выбором, заказом
+            и сервисным обслуживанием.
+          </p>
+        </div>
+        <aside class="hero-aside is-in" style="--d:120ms"-bound="">
+          <span class="mono">Сегодня</span>
+          <b>09:00–21:00</b>
+          <span class="mono">ТРЦ «Территория Севера»</span>
+        </aside>
       </div>
     </section>
 
-    <section class="contacts-info">
-      <div class="container contacts-layout">
-        <div class="map-placeholder">Здесь будет карта с местоположением магазина</div>
-        <article class="contact-card">
-          <h2>Как с нами связаться</h2>
-          <dl>
-            <dt>Адрес магазина</dt>
-            <dd>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера», 2 этаж</dd>
-            <dt>Телефон</dt>
-            <dd><a href="tel:+73532201234">+7 (3532) 20-12-34</a></dd>
-            <dt>Email</dt>
-            <dd><a href="mailto:info@technomir.ru">info@technomir.ru</a></dd>
-            <dt>Режим работы</dt>
-            <dd>Пн–Сб: 9:00–21:00, воскресенье: 10:00–20:00</dd>
-            <dt>Мессенджеры</dt>
-            <dd>WhatsApp и Telegram: +7 (3532) 20-12-34</dd>
-          </dl>
-          <a href="tel:+73532201234">Позвонить</a>
-        </article>
-      </div>
-    </section>
+    <section class="cont-section">
+      <div class="box">
+        <div class="cont-top">
+          <div class="map-card">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=55.1100%2C51.8200%2C55.1460%2C51.8460&amp;layer=mapnik&amp;marker=51.8329%2C55.1279" loading="lazy" title="Карта: Оренбург, ТРЦ «Территория Севера»"></iframe>
+            <div class="map-caption">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="navigation" class="lucide lucide-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              <span>ТРЦ «Территория Севера», пр-кт Дзержинского, 23</span>
+            </div>
+          </div>
 
-    <section class="feedback">
-      <div class="container feedback-layout">
-        <article class="feedback-form">
-          <h2>Написать нам</h2>
-          <p>Ответим на вопрос о товаре, заказе или гарантии.</p>
-          <form action="#" method="post">
-            <div>
-              <label for="name">Ваше имя</label>
-              <input type="text" id="name" name="name" placeholder="Иван" required>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
-            </div>
-            <div>
-              <label for="phone">Телефон</label>
-              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
-            </div>
-            <div>
-              <label for="subject">Тема обращения</label>
-              <select id="subject" name="subject">
-                <option>Вопрос о товаре</option>
-                <option>Заказ и доставка</option>
-                <option>Гарантийное обслуживание</option>
-                <option>Другое</option>
-              </select>
-            </div>
-            <div>
-              <label for="message">Сообщение</label>
-              <textarea id="message" name="message" rows="5" placeholder="Опишите ваш вопрос" required></textarea>
-            </div>
-            <button type="submit">Отправить сообщение</button>
-          </form>
-        </article>
+          <article class="info-card">
+            <h2>Как с нами связаться</h2>
+            <p>Все способы связи с магазином «Техномир» в Оренбурге</p>
 
-        <article class="support-card">
-          <h2>Поможем после покупки</h2>
-          <p>Настроим устройство, перенесём данные, ответим на вопросы по эксплуатации и примем технику на гарантийное обслуживание.</p>
-          <ul>
-            <li>Настройка и перенос данных</li>
-            <li>Гарантийный ремонт</li>
-            <li>Возврат в течение 14 дней</li>
-            <li>Консультации на весь срок гарантии</li>
-          </ul>
-          <a href="tel:+73532201234">Связаться с сервисом</a>
-        </article>
+            <div class="cont-line">
+              <span class="mini-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+              <div>
+                <b>Адрес магазина</b>
+                <span>г. Оренбург, пр-кт Дзержинского, д. 23<br>ТРЦ «Территория Севера», 2 этаж</span>
+              </div>
+            </div>
+            <div class="cont-line">
+              <span class="mini-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+              <div>
+                <b>Телефон</b>
+                <span><a href="tel:+73532201234">+7 (3532) 20-12-34</a> – звонок по городу бесплатный</span>
+              </div>
+            </div>
+            <div class="cont-line">
+              <span class="mini-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
+              <div>
+                <b>Email</b>
+                <span><a href="mailto:info@technomir.ru">info@technomir.ru</a> – отвечаем в течение рабочего дня</span>
+              </div>
+            </div>
+            <div class="cont-line">
+              <span class="mini-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+              <div>
+                <b>Режим работы</b>
+                <span>Пн–Сб: 9:00–21:00<br>Воскресенье: 10:00–20:00</span>
+              </div>
+            </div>
+            <div class="cont-line">
+              <span class="mini-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-circle" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></span>
+              <div>
+                <b>Мессенджеры</b>
+                <span>WhatsApp и Telegram: +7 (3532) 20-12-34</span>
+              </div>
+            </div>
+
+            <div class="btn-row" style="margin-top:auto;padding-top:20px">
+              <a class="btn btn-dark btn-sm" href="tel:+73532201234">Позвонить</a>
+              <a class="btn btn-ghost btn-sm" href="https://yandex.ru/maps/?text=Оренбург%2C%20проспект%20Дзержинского%2C%2023" target="_blank" rel="noopener">Построить маршрут</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="cont-bottom">
+          <article class="cont-form-card">
+            <h2>Написать нам</h2>
+            <p>Ответим на вопрос о товаре, заказе или гарантии.</p>
+            <div id="forma-alert"></div>
+            <form id="forma-svyaz" novalidate="">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="imya">Ваше имя <span>*</span></label>
+                  <input type="text" id="imya" name="name" required="" placeholder="Иван" autocomplete="name" aria-describedby="imya-error">
+                  <span class="field-error" id="imya-error" role="alert"></span>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email <span>*</span></label>
+                  <input type="email" id="email" name="email" required="" placeholder="you@example.com" autocomplete="email" aria-describedby="email-error">
+                  <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+                <div class="form-field">
+                  <label for="telefon">Телефон</label>
+                  <input type="tel" id="telefon" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" aria-describedby="telefon-error">
+                  <span class="field-error" id="telefon-error" role="alert"></span>
+                </div>
+                <div class="form-field">
+                  <label for="tema">Тема обращения</label>
+                  <div class="select-shell">
+                    <select id="tema" name="subject">
+                      <option>Вопрос о товаре</option>
+                      <option>Заказ и доставка</option>
+                      <option>Гарантийное обслуживание</option>
+                      <option>Сотрудничество</option>
+                      <option>Другое</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-field full">
+                  <label for="tekst">Сообщение <span>*</span></label>
+                  <textarea id="tekst" name="message" rows="5" required="" placeholder="Опишите вопрос – постараемся помочь как можно быстрее…" aria-describedby="tekst-error"></textarea>
+                  <span class="field-error" id="tekst-error" role="alert"></span>
+                </div>
+              </div>
+              <button class="btn btn-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg> Отправить сообщение</button>
+            </form>
+          </article>
+
+          <article class="support-card">
+            <div>
+              <span class="mono">Сервис и поддержка</span>
+              <h2>Поможем<br><em>после покупки.</em></h2>
+              <p>
+                Настроим устройство, перенесём данные, ответим на вопросы по эксплуатации
+                и примем технику на гарантийное обслуживание.
+              </p>
+              <ul class="support-list">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings-2" class="lucide lucide-settings-2"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg> Настройка и перенос данных</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg> Гарантийный ремонт</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="rotate-ccw" class="lucide lucide-rotate-ccw"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg> Возврат в течение 14 дней</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Консультации на весь срок гарантии</li>
+              </ul>
+            </div>
+            <a class="btn btn-acid" href="tel:+73532201234"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Связаться с сервисом</a>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
-    <footer class="site-footer">
-    <div class="container">
-      <section class="footer-top">
-        <h2>Техника, которой хочется пользоваться.</h2>
-        <form action="#" method="post">
-          <label for="subscribe-email">Письма о новинках и скидках</label>
-          <div>
-            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
-            <button type="submit">Подписаться</button>
+  <footer id="podval">
+      <div class="footer">
+        <div class="box">
+          <div class="podval-top">
+            <div class="podval-lead">
+              <h2>Техника, которой<br>хочется пользоваться.</h2>
+            </div>
+            <form class="podval-sub">
+              <label for="podval-email" class="mono">Письма о новинках и скидках</label>
+              <div class="podval-sub-row">
+                <input id="podval-email" type="email" placeholder="you@example.com" required="" autocomplete="email">
+                <button class="btn btn-acid" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+              </div>
+            </form>
           </div>
-        </form>
-      </section>
 
-      <section class="footer-grid">
-        <article class="footer-brand">
-          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
-          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
-        </article>
-        <nav aria-label="Каталог">
-          <h3>Каталог</h3>
-          <a href="catalog.html">Смартфоны и гаджеты</a>
-          <a href="catalog.html">Компьютеры и периферия</a>
-          <a href="catalog.html">Бытовая электроника</a>
-          <a href="catalog.html">Игры и консоли</a>
-          <a href="catalog.html">Аксессуары</a>
-          <a href="catalog.html">Аудио и звук</a>
-        </nav>
-        <nav aria-label="Покупателям">
-          <h3>Покупателям</h3>
-          <a href="catalog.html">Все товары</a>
-          <a href="compare.html">Сравнение</a>
-          <a href="cart.html">Корзина</a>
-          <a href="track.html">Отслеживание заказа</a>
-          <a href="profile.html">Личный кабинет</a>
-        </nav>
-        <article class="footer-contacts">
-          <h3>Магазин</h3>
-          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
-          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
-          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
-          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
-        </article>
-      </section>
+          <div class="podval-grid">
+            <div class="podval-brand">
+              
+    <a class="brand brand-light" href="/" aria-label="Техномир – на главную">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 34 34" fill="none">
+          <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+          <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+        </svg>
+      </span>
+      <span class="brand-word">техномир<span>.</span></span>
+    </a>
+              <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику – с гарантией до двух лет.</p>
+              <div class="podval-socials">
+                <a href="https://vk.com" target="_blank" rel="noopener" aria-label="VK"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="at-sign" class="lucide lucide-at-sign" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path></svg></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="play" class="lucide lucide-play" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></a>
+              </div>
+            </div>
 
-      <p class="footer-word">техномир*</p>
+            <div class="podval-col">
+              <h4 class="mono">Каталог</h4>
+              <a href="/catalog.html?category=smartphones">Смартфоны и гаджеты</a><a href="/catalog.html?category=parts">Компьютеры и периферия</a><a href="/catalog.html?category=appliances">Бытовая электроника</a><a href="/catalog.html?category=gaming">Игры и консоли</a><a href="/catalog.html?category=accessories">Аксессуары</a><a href="/catalog.html?category=audio">Аудио и звук</a>
+            </div>
+
+            <div class="podval-col">
+              <h4 class="mono">Покупателям</h4>
+              <a href="/catalog.html">Все товары</a>
+              <a href="/compare.html">Сравнение</a>
+              <a href="/cart.html">Корзина</a>
+              <a href="/track.html">Отслеживание заказа</a>
+              <a href="/profile.html">Личный кабинет</a>
+            </div>
+
+            <div class="podval-col foot-contacts">
+              <h4 class="mono">Магазин</h4>
+              <a href="tel:+73532201234">+7 (3532) 20-12-34</a>
+              <a href="mailto:info@technomir.ru">info@technomir.ru</a>
+              <p>г. Оренбург,<br>пр-кт Дзержинского, 23<br>ТРЦ «Территория Севера»</p>
+              <p>Пн–Сб 09:00–21:00<br>Вс 10:00–20:00</p>
+            </div>
+          </div>
+
+          <div class="foot-logo" aria-hidden="true">техномир<span>*</span></div>
+        </div>
+      </div></footer>
+
+  <div class="modal" id="modal-ok" hidden="">
+    <div class="modal-backdrop" data-modal-close=""></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-ok-title" aria-describedby="modal-ok-text">
+      <button class="icon-btn modal-close" type="button" data-modal-close="" aria-label="Закрыть окно">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+      <div class="modal-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"></path></svg></div>
+      <h2 id="modal-ok-title">Сообщение отправлено</h2>
+      <p id="modal-ok-text">Спасибо! Мы получили ваше обращение и ответим на указанный email в течение рабочего дня.</p>
+      <div class="modal-acts">
+        <button class="btn btn-dark" type="button" data-modal-close="">Отлично</button>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="js/script.js"></script>
-</body>
-</html>
+  
+  
+
+
+<div id="cmp-bar" class="cmp-bar" hidden="">
+      <span class="cmp-bar-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg> В сравнении: <b class="cmp-bar-count">0</b></span>
+      <div class="cmp-bar-acts">
+        <button class="cmp-bar-clear" type="button">Очистить</button>
+        <a class="btn btn-acid btn-sm" href="/compare.html">Сравнить <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      </div></div><nav id="dock" class="dock" aria-label="Быстрая навигация">
+      <a class="dock-link " href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="house" class="lucide lucide-house" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span>Главная</span></a>
+      <a class="dock-link " href="/catalog.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-grid" class="lucide lucide-layout-grid" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg><span>Каталог</span></a>
+      <button class="dock-link" type="button" data-search-open=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><span>Поиск</span></button>
+      <a class="dock-link " href="/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-bag" class="lucide lucide-shopping-bag" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span>Корзина</span><span class="dock-count cart-count is-empty">0</span></a>
+      <a class="dock-link " href="/login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span>Войти</span></a></nav><button class="to-top" type="button" aria-label="Наверх"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button><div class="cursor-fill" style="transform: translate3d(381px, 214px, 0px) translate(-50%, -50%);"></div><div class="cursor-ui" style="transform: translate3d(381px, 214px, 0px) translate(-50%, -50%);"><span class="cursor-label"></span></div></body></html>

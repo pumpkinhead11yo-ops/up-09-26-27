@@ -1,193 +1,150 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Админ-панель – Техномир</title>
-  <meta name="description" content="Учебный проект: админ-панель магазина электроники Техномир.">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
 </head>
-<body>
-    <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">
-        <img src="images/logo.png" alt="Логотип магазина Техномир" width="40" height="40">
-        <span>техномир.</span>
+<body class="ad-body is-loaded" data-admin="true">
+
+  <div class="ad-gate" id="ad-gate">
+    <div class="ad-gate-visual">
+      <span class="ad-gate-mark" aria-hidden="true">TM</span>
+      <a class="brand brand-light" href="/" aria-label="Техномир – на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 34 34" fill="none">
+            <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+            <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+          </svg>
+        </span>
+        <span class="brand-word">техномир<span>.</span></span>
       </a>
-      <nav class="main-nav" aria-label="Основная навигация">
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
-      </nav>
-      <nav class="header-actions" aria-label="Действия">
-        <a href="catalog.html">Поиск</a>
-        <a href="compare.html">Сравнение</a>
-        <a href="cart.html">Корзина</a>
-        <a href="login.html">Войти</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="admin-login">
-      <div class="container">
+      <div>
+        <h2 style="margin-top:0">Управление<br>магазином<br><em>без лишнего.</em></h2>
+        <p>Товары, заказы, категории, отзывы и обращения – в одной рабочей панели.</p>
+      </div>
+
+      <div class="ad-gate-stats">
+        <div><b>54</b><span>товара</span></div>
+        <div><b>6</b><span>категорий</span></div>
+        <div><b>24/7</b><span>доступ</span></div>
+      </div>
+    </div>
+
+    <div class="ad-gate-panel">
+      <form class="ad-gate-form" id="ad-login-form">
         <h1>Вход в панель</h1>
-        <p>Используйте учётную запись администратора магазина. Форма пока не проверяет данные.</p>
-        <form action="admin.html" method="post">
-          <div>
-            <label for="admin-login">Логин или email</label>
-            <input type="text" id="admin-login" name="login" required placeholder="admin">
-          </div>
-          <div>
-            <label for="admin-pass">Пароль</label>
-            <input type="password" id="admin-pass" name="password" required placeholder="Введите пароль">
-          </div>
-          <button type="submit">Войти в панель</button>
-        </form>
-        <p><a href="index.html">Вернуться на сайт</a></p>
-      </div>
-    </section>
+        <p>Используйте учётную запись администратора магазина.</p>
 
-    <div class="admin-layout">
-      <aside class="admin-side">
-        <nav aria-label="Разделы админ-панели">
-          <ul>
-            <li><a href="#dashboard">Обзор</a></li>
-            <li><a href="#products">Товары</a></li>
-            <li><a href="#orders">Заказы</a></li>
-            <li><a href="#categories">Категории</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#messages">Сообщения</a></li>
-            <li><a href="#users">Пользователи</a></li>
-          </ul>
-        </nav>
-        <p><a href="index.html">Открыть витрину</a> <a href="login.html">Выйти из панели</a></p>
-      </aside>
+        <div id="ad-login-msg"></div>
 
-      <div class="admin-main">
-        <header class="admin-top">
-          <h2>Управление магазином</h2>
-          <p>Пользователь: admin</p>
-        </header>
+        <div class="form-field">
+          <label for="ad-login">Логин или email</label>
+          <input type="text" id="ad-login" required="" placeholder="admin" autocomplete="username" autofocus="">
+        </div>
+        <div class="form-field">
+          <label for="ad-parol">Пароль</label>
+          <input type="password" id="ad-parol" required="" placeholder="••••••••" autocomplete="current-password">
+        </div>
 
-        <section id="dashboard">
-          <h3>Обзор</h3>
-          <article class="admin-stat">
-            <h4>Товары</h4>
-            <p>54</p>
-          </article>
-          <article class="admin-stat">
-            <h4>Заказы</h4>
-            <p>24</p>
-          </article>
-          <article class="admin-stat">
-            <h4>Категории</h4>
-            <p>6</p>
-          </article>
-          <article class="admin-stat">
-            <h4>Непрочитанные сообщения</h4>
-            <p>3</p>
-          </article>
-        </section>
+        <button class="btn btn-dark btn-block" type="submit" style="margin-top:4px">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-in" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" x2="3" y1="12" y2="12"></line></svg> Войти в панель
+        </button>
 
-        <section id="products">
-          <h3>Товары</h3>
-          <table>
-            <thead>
-              <tr><th>Название</th><th>Цена</th><th>Остаток</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Смартфон Example S1</td><td>49 990 ₽</td><td>7 шт.</td></tr>
-              <tr><td>Ноутбук Example Book 14</td><td>79 990 ₽</td><td>4 шт.</td></tr>
-              <tr><td>Наушники Example Sound</td><td>12 990 ₽</td><td>12 шт.</td></tr>
-            </tbody>
-          </table>
-          <button type="button">Добавить товар</button>
-        </section>
-
-        <section id="orders">
-          <h3>Заказы</h3>
-          <p>TM-00003 – в доставке, 49 990 ₽</p>
-          <p>TM-00002 – выполнен, 12 990 ₽</p>
-          <p>TM-00001 – выполнен, 21 990 ₽</p>
-        </section>
-
-        <section id="categories">
-          <h3>Категории</h3>
-          <p>Смартфоны, ноутбуки, аудио, игры, техника для дома, аксессуары.</p>
-        </section>
-
-        <section id="reviews">
-          <h3>Отзывы</h3>
-          <article>
-            <h4>Иван, 5 из 5</h4>
-            <p>Хороший смартфон, всё настроили при получении.</p>
-          </article>
-        </section>
-
-        <section id="messages">
-          <h3>Сообщения</h3>
-          <p>Сообщение от Марии: вопрос о гарантии на наушники.</p>
-        </section>
-
-        <section id="users">
-          <h3>Пользователи</h3>
-          <p>admin – администратор; alexey – покупатель.</p>
-        </section>
-      </div>
+        <a class="ad-gate-back" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Вернуться на сайт</a>
+      </form>
     </div>
-  </main>
+  </div>
 
-    <footer class="site-footer">
-    <div class="container">
-      <section class="footer-top">
-        <h2>Техника, которой хочется пользоваться.</h2>
-        <form action="#" method="post">
-          <label for="subscribe-email">Письма о новинках и скидках</label>
-          <div>
-            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
-            <button type="submit">Подписаться</button>
+  <div class="ad-shell" id="ad-app" hidden="">
+    <aside class="ad-side" id="ad-side">
+      <div class="ad-side-top">
+        <a class="brand brand-light" href="/" aria-label="Техномир – на главную">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 34 34" fill="none">
+              <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+              <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+            </svg>
+          </span>
+          <span class="brand-word">техномир<span>.</span></span>
+        </a>
+        <button class="ad-side-close" id="ad-side-x" type="button" aria-label="Закрыть меню">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+      </div>
+
+      <nav class="ad-nav" aria-label="Разделы админ-панели">
+        <a class="ad-nav-link is-active" href="#dashboard" data-section="dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-dashboard" class="lucide lucide-layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg><span>Обзор</span>
+        </a>
+        <a class="ad-nav-link" href="#products" data-section="products">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg><span>Товары</span><b class="ad-nav-badge is-zero" id="nav-tovary">0</b>
+        </a>
+        <a class="ad-nav-link" href="#orders" data-section="orders">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="receipt-text" class="lucide lucide-receipt-text"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M14 8H8"></path><path d="M16 12H8"></path><path d="M13 16H8"></path></svg><span>Заказы</span><b class="ad-nav-badge is-zero" id="nav-orders">0</b>
+        </a>
+        <a class="ad-nav-link" href="#categories" data-section="categories">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shapes" class="lucide lucide-shapes"><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"></path><rect x="3" y="14" width="7" height="7" rx="1"></rect><circle cx="17.5" cy="17.5" r="3.5"></circle></svg><span>Категории</span>
+        </a>
+        <a class="ad-nav-link" href="#reviews" data-section="reviews">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>Отзывы</span>
+        </a>
+        <a class="ad-nav-link" href="#messages" data-section="messages">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span>Сообщения</span><b class="ad-nav-badge is-zero" id="nav-msg">0</b>
+        </a>
+        <a class="ad-nav-link" href="#users" data-section="users">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Пользователи</span>
+        </a>
+      </nav>
+
+      <div class="ad-side-spacer"></div>
+
+      <div class="ad-side-foot">
+        <a href="/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg> Открыть витрину</a>
+        <button class="is-danger" id="ad-logout" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-out" class="lucide lucide-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg> Выйти из панели</button>
+      </div>
+    </aside>
+
+    <div class="ad-side-fon" id="ad-side-fon"></div>
+
+    <div class="ad-main">
+      <header class="ad-top">
+        <div class="ad-top-left">
+          <button class="ad-burger" id="ad-burger" type="button" aria-label="Открыть меню">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          </button>
+          <h1 id="ad-title">Обзор</h1>
+        </div>
+        <div class="ad-top-right">
+          <div class="ad-user">
+            <span class="ad-user-avatar" id="ad-avatar">A</span>
+            <div>
+              <span class="ad-user-name" id="ad-name">admin</span>
+            </div>
           </div>
-        </form>
-      </section>
+        </div>
+      </header>
 
-      <section class="footer-grid">
-        <article class="footer-brand">
-          <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику - с гарантией до двух лет.</p>
-          <p><a href="https://vk.com">ВКонтакте</a> <a href="https://youtube.com">YouTube</a></p>
-        </article>
-        <nav aria-label="Каталог">
-          <h3>Каталог</h3>
-          <a href="catalog.html">Смартфоны и гаджеты</a>
-          <a href="catalog.html">Компьютеры и периферия</a>
-          <a href="catalog.html">Бытовая электроника</a>
-          <a href="catalog.html">Игры и консоли</a>
-          <a href="catalog.html">Аксессуары</a>
-          <a href="catalog.html">Аудио и звук</a>
-        </nav>
-        <nav aria-label="Покупателям">
-          <h3>Покупателям</h3>
-          <a href="catalog.html">Все товары</a>
-          <a href="compare.html">Сравнение</a>
-          <a href="cart.html">Корзина</a>
-          <a href="track.html">Отслеживание заказа</a>
-          <a href="profile.html">Личный кабинет</a>
-        </nav>
-        <article class="footer-contacts">
-          <h3>Магазин</h3>
-          <p><a href="tel:+73532201234">+7 (3532) 20-12-34</a></p>
-          <p><a href="mailto:info@technomir.ru">info@technomir.ru</a></p>
-          <p>г. Оренбург, пр-кт Дзержинского, 23, ТРЦ «Территория Севера»</p>
-          <p>Пн-Сб 09:00-21:00, Вс 10:00-20:00</p>
-        </article>
-      </section>
+      <div class="ad-alert" id="ad-alert"></div>
 
-      <p class="footer-word">техномир*</p>
+      <main class="ad-content" id="ad-content"></main>
     </div>
-  </footer>
+  </div>
 
-  <script src="js/script.js"></script>
-</body>
-</html>
+  <div id="ad-modal-root"></div>
+
+  
+  
+  
+
+
+<button class="to-top" type="button" aria-label="Наверх"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button></body></html>
