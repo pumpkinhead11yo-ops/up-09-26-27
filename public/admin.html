@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
+<html lang="ru">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Админ-панель – Техномир</title>
@@ -7,22 +8,22 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/admin.css">
 </head>
-<body class="ad-body is-loaded" data-admin="true">
+<body class="ad-body" data-admin="true">
 
-  <div class="ad-gate" id="ad-gate">
+  <div class="ad-gate" id="ad-gate" hidden>
     <div class="ad-gate-visual">
       <span class="ad-gate-mark" aria-hidden="true">TM</span>
       <a class="brand brand-light" href="/" aria-label="Техномир – на главную">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 34 34" fill="none">
-            <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
-            <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+            <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
+            <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
           </svg>
         </span>
         <span class="brand-word">техномир<span>.</span></span>
@@ -49,68 +50,68 @@
 
         <div class="form-field">
           <label for="ad-login">Логин или email</label>
-          <input type="text" id="ad-login" required="" placeholder="admin" autocomplete="username" autofocus="">
+          <input type="text" id="ad-login" required placeholder="admin" autocomplete="username" autofocus>
         </div>
         <div class="form-field">
           <label for="ad-parol">Пароль</label>
-          <input type="password" id="ad-parol" required="" placeholder="••••••••" autocomplete="current-password">
+          <input type="password" id="ad-parol" required placeholder="••••••••" autocomplete="current-password">
         </div>
 
         <button class="btn btn-dark btn-block" type="submit" style="margin-top:4px">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-in" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" x2="3" y1="12" y2="12"></line></svg> Войти в панель
+          <i data-lucide="log-in"></i> Войти в панель
         </button>
 
-        <a class="ad-gate-back" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Вернуться на сайт</a>
+        <a class="ad-gate-back" href="/"><i data-lucide="arrow-left"></i> Вернуться на сайт</a>
       </form>
     </div>
   </div>
 
-  <div class="ad-shell" id="ad-app" hidden="">
+  <div class="ad-shell" id="ad-app" hidden>
     <aside class="ad-side" id="ad-side">
       <div class="ad-side-top">
         <a class="brand brand-light" href="/" aria-label="Техномир – на главную">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 34 34" fill="none">
-              <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
-              <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
+              <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
+              <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"/>
             </svg>
           </span>
           <span class="brand-word">техномир<span>.</span></span>
         </a>
         <button class="ad-side-close" id="ad-side-x" type="button" aria-label="Закрыть меню">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+          <i data-lucide="x"></i>
         </button>
       </div>
 
       <nav class="ad-nav" aria-label="Разделы админ-панели">
         <a class="ad-nav-link is-active" href="#dashboard" data-section="dashboard">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-dashboard" class="lucide lucide-layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg><span>Обзор</span>
+          <i data-lucide="layout-dashboard"></i><span>Обзор</span>
         </a>
         <a class="ad-nav-link" href="#products" data-section="products">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg><span>Товары</span><b class="ad-nav-badge is-zero" id="nav-tovary">0</b>
+          <i data-lucide="package"></i><span>Товары</span><b class="ad-nav-badge is-zero" id="nav-tovary">0</b>
         </a>
         <a class="ad-nav-link" href="#orders" data-section="orders">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="receipt-text" class="lucide lucide-receipt-text"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M14 8H8"></path><path d="M16 12H8"></path><path d="M13 16H8"></path></svg><span>Заказы</span><b class="ad-nav-badge is-zero" id="nav-orders">0</b>
+          <i data-lucide="receipt-text"></i><span>Заказы</span><b class="ad-nav-badge is-zero" id="nav-orders">0</b>
         </a>
         <a class="ad-nav-link" href="#categories" data-section="categories">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shapes" class="lucide lucide-shapes"><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"></path><rect x="3" y="14" width="7" height="7" rx="1"></rect><circle cx="17.5" cy="17.5" r="3.5"></circle></svg><span>Категории</span>
+          <i data-lucide="shapes"></i><span>Категории</span>
         </a>
         <a class="ad-nav-link" href="#reviews" data-section="reviews">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>Отзывы</span>
+          <i data-lucide="message-square"></i><span>Отзывы</span>
         </a>
         <a class="ad-nav-link" href="#messages" data-section="messages">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span>Сообщения</span><b class="ad-nav-badge is-zero" id="nav-msg">0</b>
+          <i data-lucide="mail"></i><span>Сообщения</span><b class="ad-nav-badge is-zero" id="nav-msg">0</b>
         </a>
         <a class="ad-nav-link" href="#users" data-section="users">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Пользователи</span>
+          <i data-lucide="users"></i><span>Пользователи</span>
         </a>
       </nav>
 
       <div class="ad-side-spacer"></div>
 
       <div class="ad-side-foot">
-        <a href="/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg> Открыть витрину</a>
-        <button class="is-danger" id="ad-logout" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-out" class="lucide lucide-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg> Выйти из панели</button>
+        <a href="/" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Открыть витрину</a>
+        <button class="is-danger" id="ad-logout" type="button"><i data-lucide="log-out"></i> Выйти из панели</button>
       </div>
     </aside>
 
@@ -120,7 +121,7 @@
       <header class="ad-top">
         <div class="ad-top-left">
           <button class="ad-burger" id="ad-burger" type="button" aria-label="Открыть меню">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            <i data-lucide="menu"></i>
           </button>
           <h1 id="ad-title">Обзор</h1>
         </div>
@@ -136,15 +137,16 @@
 
       <div class="ad-alert" id="ad-alert"></div>
 
-      <main class="ad-content" id="ad-content"></main>
+      <main class="ad-content" id="ad-content">
+        <div class="loading"><span class="spinner"></span> Загрузка панели…</div>
+      </main>
     </div>
   </div>
 
   <div id="ad-modal-root"></div>
 
-  
-  
-  
-
-
-<button class="to-top" type="button" aria-label="Наверх"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button><script src="/js/script.js" defer></script></body></html>
+  <script src="/lib/lucide.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

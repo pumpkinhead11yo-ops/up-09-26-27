@@ -1,0 +1,1060 @@
+{
+  "source": "Яндекс Маркет",
+  "products": [
+    {
+      "id": 1,
+      "category": "smartphones",
+      "name": "Смартфон realme Note 80, 4/128 ГБ, 6.74\", 1600x720, IP 54, голубой",
+      "description": "Диагональ экрана: 6.74\". Встроенная память: 128 ГБ. Оперативная память: 4 ГБ. Количество основных камер: 1. Разрешение основной камеры (точно): 8 Мпикс.",
+      "price": 15335,
+      "oldPrice": null,
+      "image": "ym-5730169559.jpg",
+      "stock": 56,
+      "specs": {
+        "Диагональ экрана": "6.74\"",
+        "Встроенная память": "128 ГБ",
+        "Оперативная память": "4 ГБ",
+        "Количество основных камер": "1",
+        "Разрешение основной камеры (точно)": "8 Мпикс"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/smartfon-realme-note-80-4--128-gb-goluboy/5675558168",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/19923150/2a0000019f4b5ca1dc8f0b7abaf5823e1088/orig"
+    },
+    {
+      "id": 2,
+      "category": "smartphones",
+      "name": "Смартфон Tecno Spark Go 3 4/64Gb, черный",
+      "description": "Диагональ экрана: 6.75\". Встроенная память: 64 ГБ. Оперативная память: 4 ГБ. Количество основных камер: 1. Частота обновления экрана: 120 Гц.",
+      "price": 10546,
+      "oldPrice": null,
+      "image": "ym-5298161473.jpg",
+      "stock": 9,
+      "specs": {
+        "Диагональ экрана": "6.75\"",
+        "Встроенная память": "64 ГБ",
+        "Оперативная память": "4 ГБ",
+        "Количество основных камер": "1",
+        "Частота обновления экрана": "120 Гц"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/smartfon-tecno-spark-go-3-464gb-chernyy/5295712199",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18820978/2a0000019cf4f14c159ea90072f178f6c7db/orig"
+    },
+    {
+      "id": 3,
+      "category": "smartphones",
+      "name": "8.7\" Планшет Samsung Galaxy Tab A11 BSM-X130 G99 8C 4Gb 64Gb TFT серебристый",
+      "description": "Диагональ экрана: 8.7\". Частота обновления: 90 Гц. Процессор: MediaTek Helio G99. Операционная система: Android 15. Разрешение основной камеры (точно): 8 Мпикс.",
+      "price": 12757,
+      "oldPrice": null,
+      "image": "ym-6190758486.jpg",
+      "stock": 3,
+      "specs": {
+        "Диагональ экрана": "8.7\"",
+        "Частота обновления": "90 Гц",
+        "Процессор": "MediaTek Helio G99",
+        "Операционная система": "Android 15",
+        "Разрешение основной камеры (точно)": "8 Мпикс"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/87-planshet-samsung-galaxy-tab-a11-bsm-x130-g99-8c-4gb-64gb-tft-serebristyy/5254586713",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/21324655/pic8eaefe89eccd90caecbfb0ab464a27dc/orig"
+    },
+    {
+      "id": 4,
+      "category": "smartphones",
+      "name": "Смарт-часы Xiaomi Redmi Watch 5 Lite, AMOLED, Светло-золотой, Bluetooth 5.3, 1.96\"",
+      "description": "Материал корпуса: Пластик (NCVM). Размер ремешка: 135-205 мм. Материал браслета/ремешка: термополиуретан. Защищенность: влагозащита. Совместимость с ОС: Android, iOS.",
+      "price": 3918,
+      "oldPrice": null,
+      "image": "ym-6219097686.jpg",
+      "stock": 39,
+      "specs": {
+        "Материал корпуса": "Пластик (NCVM)",
+        "Размер ремешка": "135-205 мм",
+        "Материал браслета/ремешка": "термополиуретан",
+        "Защищенность": "влагозащита",
+        "Совместимость с ОС": "Android, iOS"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/redmi-watch-5-lite-light-gold/4498423346",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/19823040/pic53540d0c497e3483c178e460920bc230/orig"
+    },
+    {
+      "id": 5,
+      "category": "audio",
+      "name": "Наушники Pods Pro 2, беспроводные, сенсорное управление, для iPhone и Android",
+      "description": "Версия: Global для РФ. Тип: беспроводные TWS-наушники. Конструкция: внутриканальные. Особенности: влагозащита, кнопка ответа, мягкие амбушюры, регулировка громкости. Тип крепления: без крепления.",
+      "price": 688,
+      "oldPrice": null,
+      "image": "ym-5776990652.png",
+      "stock": 36,
+      "specs": {
+        "Версия": "Global для РФ",
+        "Тип": "беспроводные TWS-наушники",
+        "Конструкция": "внутриканальные",
+        "Особенности": "влагозащита, кнопка ответа, мягкие амбушюры, регулировка громкости",
+        "Тип крепления": "без крепления"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/naushniki-pods-pro-2-besprovodnyye-sensornoye-upravleniye-dlya-iphone-i-android/5776990653",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20004663/2a0000019e6fc18b97de9155f75e8032e6d5/orig"
+    },
+    {
+      "id": 6,
+      "category": "smartphones",
+      "name": "Экшн-камера GoPro HERO13 Black, HB Объектив серии , 1900 мА·ч, черный",
+      "description": "Разрешение HD: 5.3K. Максимальное разрешение видеосъемки X: 5. Максимальное разрешение видеосъемки Y: 4. Беспроводная связь: Bluetooth, Wi-Fi. Тип стабилизатора изображения: электронный (цифровой).",
+      "price": 34731,
+      "oldPrice": null,
+      "image": "ym-6550318099.jpg",
+      "stock": 47,
+      "specs": {
+        "Разрешение HD": "5.3K",
+        "Максимальное разрешение видеосъемки X": "5",
+        "Максимальное разрешение видеосъемки Y": "4",
+        "Беспроводная связь": "Bluetooth, Wi-Fi",
+        "Тип стабилизатора изображения": "электронный (цифровой)"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/ekshn-kamera-gopro-hero-13-black---vodonepronitsayemaya-ekshn-kamera-s-video-53k60-foto-27-mp/4824447229",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18709130/pic0ce367ceae17f77959a089cb526eca16/orig"
+    },
+    {
+      "id": 7,
+      "category": "smartphones",
+      "name": "Квадрокоптер складной с камерой Rims, питанием от аккумулятора, глубина 12.5 см, ширина 80 мм",
+      "description": "Сфера использования: детский, любительский. Камера: с камерой. Максимальное разрешение видеосъемки: 1080p. Управление: Wi-Fi, радиоканал. Тип комплектации: RTF.",
+      "price": 2911,
+      "oldPrice": null,
+      "image": "ym-5894336321.jpg",
+      "stock": 3,
+      "specs": {
+        "Сфера использования": "детский, любительский",
+        "Камера": "с камерой",
+        "Максимальное разрешение видеосъемки": "1080p",
+        "Управление": "Wi-Fi, радиоканал",
+        "Тип комплектации": "RTF"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/kvadrokopter-dron-skladnoy-s-kameroy/5352832923",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18111556/2a0000019d058b3bcfe613fa334351fdfe00/orig"
+    },
+    {
+      "id": 8,
+      "category": "parts",
+      "name": "15.6\" Ноутбук LUNNEN Ground 15 (2025), AMD Ryzen 5 7430U, RAM 16 ГБ, SSD 512 ГБ, IPS Full HD 1920x1080, Windows 11 Home, цвет Silver Sea, LL5FAWL03",
+      "description": "Диагональ экрана: 15.6\". Разрешение экрана: 1920x1080. Процессор: AMD Ryzen 5 7430U. Оперативная память: 16 ГБ. Общий объем накопителей SSD: 512 ГБ.",
+      "price": 54540,
+      "oldPrice": null,
+      "image": "ym-816837045.png",
+      "stock": 5,
+      "specs": {
+        "Диагональ экрана": "15.6\"",
+        "Разрешение экрана": "1920x1080",
+        "Процессор": "AMD Ryzen 5 7430U",
+        "Оперативная память": "16 ГБ",
+        "Общий объем накопителей SSD": "512 ГБ"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/156-noutbuk-lunnen-ground-15-2025-amd-ryzen-5-7430u-ram-16-gb-ssd-512-gb-ips-full-hd-1920x1080-windows-11-home-tsvet-silver-sea-ll5fawl03/4625706033",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18720917/2a0000019dfd09c0a1a3800cb69f65430031/orig"
+    },
+    {
+      "id": 9,
+      "category": "parts",
+      "name": "Видеокарта игровая AMD Rаdеоn RХ 580 8G для ПК новая ver. 2.2.",
+      "description": "Тип памяти: GDDR5. Объем видеопамяти (точно): 8192 МБ. Разрядность шины памяти: 256 бит. Тип подключения: PCI Express 3.0. Разъемы и интерфейсы: выход DisplayPort x 3, выход HDMI.",
+      "price": 15229,
+      "oldPrice": null,
+      "image": "ym-1782698835.jpg",
+      "stock": 47,
+      "specs": {
+        "Тип памяти": "GDDR5",
+        "Объем видеопамяти (точно)": "8192 МБ",
+        "Разрядность шины памяти": "256 бит",
+        "Тип подключения": "PCI Express 3.0",
+        "Разъемы и интерфейсы": "выход DisplayPort x 3, выход HDMI"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/videokarta-igrovaya-amd-radeon-rkh-580-8g-dlya-pk-ver-22/103203999855",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/11535894/2a0000018be8ecb2e148819da2bce710bd20/orig"
+    },
+    {
+      "id": 10,
+      "category": "parts",
+      "name": "Игровой монитор Xiaomi Redmi G24 A24FDA-RG 23.8″, Full HD, VA, 240 Гц, 1 мс, FreeSync, Black, CN",
+      "description": "Игровой монитор: да. Диагональ экрана: 24\". Разрешение экрана: 1920x1080. Соотношение сторон экрана: 16:9. Тип матрицы: *VA.",
+      "price": 10114,
+      "oldPrice": null,
+      "image": "ym-5929946592.png",
+      "stock": 3,
+      "specs": {
+        "Игровой монитор": "да",
+        "Диагональ экрана": "24\"",
+        "Разрешение экрана": "1920x1080",
+        "Соотношение сторон экрана": "16:9",
+        "Тип матрицы": "*VA"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/igrovoy-monitor-xiaomi-redmi-g24-a24fda-rg-diagonal-24-240gts-chernyy/4811509888",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/19845214/pic67b1896302cda0063013216be98a9cfe/orig"
+    },
+    {
+      "id": 11,
+      "category": "parts",
+      "name": "Игровая клавиатура Defender Hawk GK-418",
+      "description": "Назначение: для настольного компьютера, игровая. Беспроводная клавиатура: нет. Тип клавиатуры: механическая клавиатура. Интерфейс подключения: USB. Подсветка: Да, Многоцветная.",
+      "price": 1951,
+      "oldPrice": null,
+      "image": "ym-872096876.jpg",
+      "stock": 18,
+      "specs": {
+        "Назначение": "для настольного компьютера, игровая",
+        "Беспроводная клавиатура": "нет",
+        "Тип клавиатуры": "механическая клавиатура",
+        "Интерфейс подключения": "USB",
+        "Подсветка": "Да, Многоцветная"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/igrovaya-klaviatura-defender-hawk-gk-418/5042123465",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20218488/2a0000019e97fe2a6dc05c3d2812b95638d1/orig"
+    },
+    {
+      "id": 12,
+      "category": "parts",
+      "name": "Игровая беспроводная мышь Ajazz AJ139 V2 MC, 3 типа подключения, Белая, с док-станцией, 500mAh, PAW 3311",
+      "description": "Интерфейс подключения: USB Type-C, радиоканал. Тип сенсора: оптомеханический. Разрешение оптического сенсора: 12000 dpi. Особенности: подсветка, 500mAh, DPI-12000, IPS-300, док-станция, донгл 1К. Количество клавиш: 6 шт.",
+      "price": 1879,
+      "oldPrice": null,
+      "image": "ym-6298996305.png",
+      "stock": 43,
+      "specs": {
+        "Интерфейс подключения": "USB Type-C, радиоканал",
+        "Тип сенсора": "оптомеханический",
+        "Разрешение оптического сенсора": "12000 dpi",
+        "Особенности": "подсветка, 500mAh, DPI-12000, IPS-300, док-станция, донгл 1К",
+        "Количество клавиш": "6 шт"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/igrovaya-besprovodnaya-mysh-ajazz-aj139-v2-mc-belaya/4369009428",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/21961718/pic045ed3db305cbae72e74bcc022893d3b/orig"
+    },
+    {
+      "id": 13,
+      "category": "parts",
+      "name": "512 GB Внутренний SSD накопитель PCI-E 3.0 M.2 NVMe QOPP жесткий диск для ноутбука и компьютера",
+      "description": "Емкость: 512 ГБ. Форм-фактор: M.2. Назначение: для ноутбука и настольного компьютера. Cтандарт SSD: M.2. Интерфейс: PCI-E 3.0.",
+      "price": 9524,
+      "oldPrice": null,
+      "image": "ym-6170853166.jpg",
+      "stock": 53,
+      "specs": {
+        "Емкость": "512 ГБ",
+        "Форм-фактор": "M.2",
+        "Назначение": "для ноутбука и настольного компьютера",
+        "Cтандарт SSD": "M.2",
+        "Интерфейс": "PCI-E 3.0"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/512-gb-vnutrenniy-ssd-nakopitel-pci-e-30-m2-nvme-qopp-zhestkiy-disk-dlya-noutbuka-i-kompyutera/102153977571",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/14816102/2a00000199334d0c3bea3d7a2bd487b35d57/orig"
+    },
+    {
+      "id": 14,
+      "category": "appliances",
+      "name": "43” Телевизор Tuvio 4К ULTRA HD DLED Frameless на платформе YaOS, TD43UFBHH13, черный",
+      "description": "Диагональ экрана: 43\". Разрешение HD: 4K UHD. Частота обновления: 60 Гц. Операционная система: YaOS. Тип матрицы: VA.",
+      "price": 23224,
+      "oldPrice": null,
+      "image": "ym-5729232526.jpg",
+      "stock": 26,
+      "specs": {
+        "Диагональ экрана": "43\"",
+        "Разрешение HD": "4K UHD",
+        "Частота обновления": "60 Гц",
+        "Операционная система": "YaOS",
+        "Тип матрицы": "VA"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/43-televizor-tuvio-4k-ultra-hd-dled-frameless-na-platforme-yaos-td43ufbhh13-chernyy/4398250829",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/23164479/pic019fefc5d223f9ab4afe7e4440914a12/orig"
+    },
+    {
+      "id": 15,
+      "category": "appliances",
+      "name": "Телевизор Xiaomi TV A 50 2026, 4K, 3840 × 2160, Smart TV, черный",
+      "description": "Диагональ экрана: 50\". Разрешение HD: 4K UHD. Частота обновления: 120 Гц. Операционная система: Android. Яркость: 240 кд/м2.",
+      "price": 27710,
+      "oldPrice": null,
+      "image": "ym-1802429756.jpg",
+      "stock": 33,
+      "specs": {
+        "Диагональ экрана": "50\"",
+        "Разрешение HD": "4K UHD",
+        "Частота обновления": "120 Гц",
+        "Операционная система": "Android",
+        "Яркость": "240 кд/м2"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/televizor-xiaomi-tv-a-50-2026-4k-3840--2160-smart-tv-chernyy/5708603139",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12281369/img_id4678281231319158041.jpeg/orig"
+    },
+    {
+      "id": 16,
+      "category": "audio",
+      "name": "Беспроводная портативная колонка блютуз маленькая с влагозащитой IPX7",
+      "description": "Вид: моно. Суммарная мощность (подробно): 5 Вт. Питание: 12 В. Беспроводные интерфейсы: Bluetooth. Разъемы и интерфейсы: 3.5 мм, USB Type-C.",
+      "price": 534,
+      "oldPrice": null,
+      "image": "ym-6162644247.jpg",
+      "stock": 50,
+      "specs": {
+        "Вид": "моно",
+        "Суммарная мощность (подробно)": "5 Вт",
+        "Питание": "12 В",
+        "Беспроводные интерфейсы": "Bluetooth",
+        "Разъемы и интерфейсы": "3.5 мм, USB Type-C"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/besprovodnaya-portativnaya-kolonka-blyutuz-gogadget-citywave-malenkaya-s-vlagozashchitoy-ipx7/6159588215",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/21157407/pic7076891c8560553db2232df840577031/orig"
+    },
+    {
+      "id": 17,
+      "category": "gaming",
+      "name": "Игровая консоль для телевизора , 20000 ретро игр, 4K , игры\\ Игровая приставка Game Stick",
+      "description": "Вид приставки: стационарная. Диагональ экрана: 11 \". Тип носителя: microSD. Питание: сеть. Цвет товара: черный.",
+      "price": 1355,
+      "oldPrice": null,
+      "image": "ym-1235894574.png",
+      "stock": 23,
+      "specs": {
+        "Вид приставки": "стационарная",
+        "Диагональ экрана": "11 \"",
+        "Тип носителя": "microSD",
+        "Питание": "сеть",
+        "Цвет товара": "черный"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/igrovaya-konsol-dlya-televizora--20000-retro-igr-4k--igry-igrovaya-pristavka-game-stick/103796235214",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20176872/2a0000019f039ec16f0e875ecd5dfc2b4d57/orig"
+    },
+    {
+      "id": 18,
+      "category": "gaming",
+      "name": "Flydigi Dune Fox - беспроводной геймпад для ПК, Телефона, Nintendo, Steam Deck",
+      "description": "Совместимость: Android, Mac, Nintendo Switch, iOS, ПК. Тип подключения: беспроводной, проводной. Виброотдача и обратная связь: виброотдача, вибрация. Поддержка XInput/DirectInput: DirectInput / XInput. Цвет товара: dunefox.",
+      "price": 2147,
+      "oldPrice": null,
+      "image": "ym-6538201931.jpg",
+      "stock": 4,
+      "specs": {
+        "Совместимость": "Android, Mac, Nintendo Switch, iOS, ПК",
+        "Тип подключения": "беспроводной, проводной",
+        "Виброотдача и обратная связь": "виброотдача, вибрация",
+        "Поддержка XInput/DirectInput": "DirectInput / XInput",
+        "Цвет товара": "dunefox"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/flydigi-dune-fox---besprovodnoy-geympad-dlya-pk-telefona-nintendo-steam-deck/4324645938",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12552638/2a0000019690be3a71f8b65465a3ed68eaca/orig"
+    },
+    {
+      "id": 19,
+      "category": "gaming",
+      "name": "Oculus Quest 3S 128 ГБ VR шлем очки виртуальной реальности Глобальная версия поддерживает русский язык",
+      "description": "Разрешение для каждого глаза: 1832x1920. Общее разрешение: 1832x1920. Угол обзора: 96.",
+      "price": 37745,
+      "oldPrice": null,
+      "image": "ym-715558003.jpg",
+      "stock": 12,
+      "specs": {
+        "Разрешение для каждого глаза": "1832x1920",
+        "Общее разрешение": "1832x1920",
+        "Угол обзора": "96"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/oculus-quest-3s-128-gb-vr-shlem-ochki-virtualnoy-realnosti-globalnaya-versiya-podderzhivayet-russkiy-yazyk/4757671570",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/16299004/2a000001999a83997bbef8b1f63023a82242/orig"
+    },
+    {
+      "id": 20,
+      "category": "accessories",
+      "name": "Wi-Fi Роутер NETIS N3D AC1200 беспроводной , двухдиапазонный, Wi-Fi 5, 4 антенны, MU-MIMO, Beamforming, до 1167 Мбит/с, черный",
+      "description": "Частоты Wi-Fi: 2.4 / 5 ГГц. Скорость Ethernet: 100 Мбит/с. Стандарт Wi-Fi 802.11: a (Wi-Fi 2), ac (Wi-Fi 5), b (Wi-Fi 1), g (Wi-Fi 3), n (Wi-Fi 4). Количество LAN-портов: 3. Макс. скорость беспроводного соединения: 1167 Мбит/с.",
+      "price": 1252,
+      "oldPrice": null,
+      "image": "ym-5288653453.jpg",
+      "stock": 54,
+      "specs": {
+        "Частоты Wi-Fi": "2.4 / 5 ГГц",
+        "Скорость Ethernet": "100 Мбит/с",
+        "Стандарт Wi-Fi 802.11": "a (Wi-Fi 2), ac (Wi-Fi 5), b (Wi-Fi 1), g (Wi-Fi 3), n (Wi-Fi 4)",
+        "Количество LAN-портов": "3",
+        "Макс. скорость беспроводного соединения": "1167 Мбит/с"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/marshrutizator-besprovodnoy-netis-n3d-chernyy/5195120626",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18257094/2a0000019e7428b26c7362d3f680e7ea8719/orig"
+    },
+    {
+      "id": 21,
+      "category": "accessories",
+      "name": "Внешний аккумулятор Type-C, 2xUSB, MicroUSB 5000 мА-ч, 10Вт, черный, AXXA 3459",
+      "description": "Емкость аккумулятора: 5000 мА·ч. Совместимость: Для мобильного телефона. Макс. выходной ток: 5 А. Особенности: зарядка двух устройств, индикатор заряда. Вес: 110 г.",
+      "price": 362,
+      "oldPrice": null,
+      "image": "ym-628588718.jpg",
+      "stock": 31,
+      "specs": {
+        "Емкость аккумулятора": "5000 мА·ч",
+        "Совместимость": "Для мобильного телефона",
+        "Макс. выходной ток": "5 А",
+        "Особенности": "зарядка двух устройств, индикатор заряда",
+        "Вес": "110 г"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/vneshniy-akkumulyator-type-c-2xusb-microusb-5000-ma-ch-10vt-chernyy-axxa-3459/4405411972",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4303516/2a00000195b0037eb272ea573c80f07fbc4e/orig"
+    },
+    {
+      "id": 22,
+      "category": "smartphones",
+      "name": "Смартфон POCO C81 Pro 4GB/128GB, Android , экран 6,9\", 120Hz, черный",
+      "description": "Диагональ экрана: 6.9\". Встроенная память: 128 ГБ. Оперативная память: 4 ГБ. Версия: Ростест (EAC). Количество основных камер: 1.",
+      "price": 15143,
+      "oldPrice": null,
+      "image": "ym-6375639016.jpg",
+      "stock": 39,
+      "specs": {
+        "Диагональ экрана": "6.9\"",
+        "Встроенная память": "128 ГБ",
+        "Оперативная память": "4 ГБ",
+        "Версия": "Ростест (EAC)",
+        "Количество основных камер": "1"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/smartfon-poco-c81-pro-4gb128gb-android--ekran-69-120hz-chernyy/5684673295",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/17639124/2a0000019f88a4561124c0cc7f41559c48b3/orig"
+    },
+    {
+      "id": 23,
+      "category": "smartphones",
+      "name": "Смартфон Samsung Galaxy A07 4/64 Black",
+      "description": "Диагональ экрана: 6.7\". Встроенная память: 64 ГБ. Оперативная память: 4 ГБ. Количество основных камер: 2. Частота обновления экрана: 90 Гц.",
+      "price": 12288,
+      "oldPrice": null,
+      "image": "ym-5961458000.jpg",
+      "stock": 7,
+      "specs": {
+        "Диагональ экрана": "6.7\"",
+        "Встроенная память": "64 ГБ",
+        "Оперативная память": "4 ГБ",
+        "Количество основных камер": "2",
+        "Частота обновления экрана": "90 Гц"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/smartfon-samsung-galaxy-a07-464-black/5200938137",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/16273139/2a0000019c217e3173942ba01175b87965d8/orig"
+    },
+    {
+      "id": 24,
+      "category": "smartphones",
+      "name": "Планшет HUAWEI MatePad SE 11\" Wi-Fi 4 ГБ + 128 ГБ Серый Ростест (ЕАС)",
+      "description": "Диагональ экрана: 11\". Частота обновления: 60 Гц. Процессор: Kirin 710A. Операционная система: HarmonyOS. Версия: Ростест (EAC).",
+      "price": 13959,
+      "oldPrice": null,
+      "image": "ym-358340387.jpg",
+      "stock": 52,
+      "specs": {
+        "Диагональ экрана": "11\"",
+        "Частота обновления": "60 Гц",
+        "Процессор": "Kirin 710A",
+        "Операционная система": "HarmonyOS",
+        "Версия": "Ростест (EAC)"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/planshet-huawei-matepad-se-11-wifi-4-gb--128-gb-seryy/4554713302",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20237254/2a0000019db00c932c438cdf01ba199b7314/orig"
+    },
+    {
+      "id": 25,
+      "category": "smartphones",
+      "name": "Смарт часы HUAWEI Band 11 Pro , Голубой цвет, Ростест (ЕАС).",
+      "description": "Материал корпуса: металл. Размер ремешка: 130. Материал браслета/ремешка: фторэластомер. Защищенность: влагозащита, пылезащита. Совместимость с ОС: Android, iOS.",
+      "price": 3968,
+      "oldPrice": null,
+      "image": "ym-5565617177.jpg",
+      "stock": 8,
+      "specs": {
+        "Материал корпуса": "металл",
+        "Размер ремешка": "130",
+        "Материал браслета/ремешка": "фторэластомер",
+        "Защищенность": "влагозащита, пылезащита",
+        "Совместимость с ОС": "Android, iOS"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/smart-chasy-huawei-band-11-pro--goluboy-tsvet-rostest-yeas/5565748488",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12279676/2a0000019e3b652da350f181dfbaffe5b888/orig"
+    },
+    {
+      "id": 26,
+      "category": "smartphones",
+      "name": "Экшн-камера Digma DiCam 810 4K, WiFi, серый [dc810]",
+      "description": "",
+      "price": 5885,
+      "oldPrice": null,
+      "image": "ym-1955328225.jpg",
+      "stock": 3,
+      "specs": {},
+      "featured": false,
+      "source": "https://market.yandex.ru/card/ekshn-kamera-digma-dicam-810-4k-wifi-seryy-dc810/103196906841",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4887894/img_id1693245962112258774.jpeg/orig"
+    },
+    {
+      "id": 27,
+      "category": "smartphones",
+      "name": "Квадрокоптер SkyDron M88, радиоуправление, камера 4k, дальность полета 200 м",
+      "description": "Сфера использования: детский, любительский. Дальность полета: 200 м. Максимальное время полета: 40 мин.. Камера: с камерой. Максимальное разрешение видеосъемки: 2160p.",
+      "price": 6533,
+      "oldPrice": null,
+      "image": "ym-6050776097.png",
+      "stock": 5,
+      "specs": {
+        "Сфера использования": "детский, любительский",
+        "Дальность полета": "200 м",
+        "Максимальное время полета": "40 мин.",
+        "Камера": "с камерой",
+        "Максимальное разрешение видеосъемки": "2160p"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/kvadrokopter-s-kameroy-m88/4623120808",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20315992/pic146ea14f9e56d5d4a9ee70da10f60ff1/orig"
+    },
+    {
+      "id": 28,
+      "category": "parts",
+      "name": "16\" Ноутбук LUNNEN Ground 16, AMD Ryzen 7 7730U, RAM 16 ГБ, SSD 512 ГБ, 1920x1200, Windows 11, Sargasso Sea, LL6FAWL07",
+      "description": "Диагональ экрана: 16\". Разрешение экрана: 1920x1200. Процессор: AMD Ryzen 7 7730U. Оперативная память: 16 ГБ. Общий объем накопителей SSD: 512 ГБ.",
+      "price": 59591,
+      "oldPrice": null,
+      "image": "ym-816830091.png",
+      "stock": 5,
+      "specs": {
+        "Диагональ экрана": "16\"",
+        "Разрешение экрана": "1920x1200",
+        "Процессор": "AMD Ryzen 7 7730U",
+        "Оперативная память": "16 ГБ",
+        "Общий объем накопителей SSD": "512 ГБ"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/noutbuk-lunnen-ground-16-ll6fawl07/4347190501",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/17750686/2a0000019dfd10a22cbae03913ae9e460228/orig"
+    },
+    {
+      "id": 29,
+      "category": "parts",
+      "name": "Ноутбук ASUS Vivobook Go 15 15.6\"FHD/Ryzen 5 40/8GB/SSD 512GB/RADEON 610M/Win11pro",
+      "description": "Диагональ экрана: 15.6\". Разрешение экрана: 1920x1080. Процессор: AMD Ryzen 5 40. Оперативная память: 8 ГБ. Общий объем накопителей SSD: 512 ГБ.",
+      "price": 56853,
+      "oldPrice": null,
+      "image": "ym-923324041.png",
+      "stock": 6,
+      "specs": {
+        "Диагональ экрана": "15.6\"",
+        "Разрешение экрана": "1920x1080",
+        "Процессор": "AMD Ryzen 5 40",
+        "Оперативная память": "8 ГБ",
+        "Общий объем накопителей SSD": "512 ГБ"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/noutbuk-asus-vivobook-go-15-156fhdryzen-5-408gbssd-512gbradeon-610mwin11pro/5733960709",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20218488/2a0000019ef4b1ff358c5e2657b6993ba2f9/orig"
+    },
+    {
+      "id": 30,
+      "category": "parts",
+      "name": "Монитор Msi MAG 244F 23.8\" Black",
+      "description": "Игровой монитор: да. Диагональ экрана: 23.8\". Разрешение экрана: 1920x1080. Соотношение сторон экрана: 16:9. Тип матрицы: IPS.",
+      "price": 10272,
+      "oldPrice": null,
+      "image": "ym-6448919722.jpg",
+      "stock": 3,
+      "specs": {
+        "Игровой монитор": "да",
+        "Диагональ экрана": "23.8\"",
+        "Разрешение экрана": "1920x1080",
+        "Соотношение сторон экрана": "16:9",
+        "Тип матрицы": "IPS"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/monitor-msi-238-mag-244f-black/4493888290",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/22096888/picd652933cde1a695d71bdfdf18cb8fa76/orig"
+    },
+    {
+      "id": 31,
+      "category": "parts",
+      "name": "Игровая видеокарта MSI GAMING X GTX1050 Ti GAMING X 4G 4 Гб GDDR5",
+      "description": "Тип памяти: GDDR5. Объем видеопамяти (точно): 4096 МБ. Разрядность шины памяти: 128 бит. Тип подключения: PCI Express 3.0. Разъемы и интерфейсы: выход DVI, выход DisplayPort, выход HDMI.",
+      "price": 13580,
+      "oldPrice": null,
+      "image": "ym-5769703987.jpg",
+      "stock": 5,
+      "specs": {
+        "Тип памяти": "GDDR5",
+        "Объем видеопамяти (точно)": "4096 МБ",
+        "Разрядность шины памяти": "128 бит",
+        "Тип подключения": "PCI Express 3.0",
+        "Разъемы и интерфейсы": "выход DVI, выход DisplayPort, выход HDMI"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/igrovaya-videokarta-msi-gaming-x-gtx1050-ti-gaming-x-4g-4-gb-gddr5/5684158286",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/19151753/2a0000019dcd8a3db8533545c7af75702fb7/orig"
+    },
+    {
+      "id": 32,
+      "category": "parts",
+      "name": "Клавиатура механическая игровая с подсветкой, проводная USB, русская раскладка, для ПК и ноутбука, белая",
+      "description": "Назначение: для настольного компьютера, для ноутбука, для редактирования фото/видео, для стриминга, игровая. Беспроводная клавиатура: нет. Тип клавиатуры: механическая клавиатура, настольная. Интерфейс подключения: USB. Подсветка: подсветка клавиш.",
+      "price": 2601,
+      "oldPrice": null,
+      "image": "ym-5925100400.png",
+      "stock": 25,
+      "specs": {
+        "Назначение": "для настольного компьютера, для ноутбука, для редактирования фото/видео, для стриминга, игровая",
+        "Беспроводная клавиатура": "нет",
+        "Тип клавиатуры": "механическая клавиатура, настольная",
+        "Интерфейс подключения": "USB",
+        "Подсветка": "подсветка клавиш"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/igrovaya-mekhanicheskaya-klaviatura-dlya-kompyutera-i-noutbuka-provodnaya-usb-s-podsvetkoy-russkaya-100-klavish/5733617566",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18796690/2a0000019e41a687675014d8e6e44048d2f3/orig"
+    },
+    {
+      "id": 33,
+      "category": "parts",
+      "name": "Игровая мышь компьютерная Defender Sin'Sister оптика 6 кнопок 7200 dpi",
+      "description": "Интерфейс подключения: USB Type A. Тип сенсора: оптический светодиодный. Разрешение оптического сенсора: 7200 dpi. Особенности: подсветка, Переливающаяся подсветка. Количество клавиш: 5 шт.",
+      "price": 465,
+      "oldPrice": null,
+      "image": "ym-1497849226.jpg",
+      "stock": 47,
+      "specs": {
+        "Интерфейс подключения": "USB Type A",
+        "Тип сенсора": "оптический светодиодный",
+        "Разрешение оптического сенсора": "7200 dpi",
+        "Особенности": "подсветка, Переливающаяся подсветка",
+        "Количество клавиш": "5 шт"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/igrovaya-myshka-dlya-kompyutera-defender-sinsister-optika-6-knopok-7200-dpi/103249167315",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12200529/2a0000019624f6b04b115a66011ab81c6671/orig"
+    },
+    {
+      "id": 34,
+      "category": "parts",
+      "name": "Внутренний SSD диск KINGSPEC 256GB, M.2, NVMe, PCIe 3.0 x (NE-256 2280)",
+      "description": "Емкость: 256 ГБ. Форм-фактор: M.2. Назначение: для настольного компьютера, для ноутбука, для ноутбука и настольного компьютера. Интерфейс: PCI-E 3.0. Линейка: NE.",
+      "price": 5071,
+      "oldPrice": null,
+      "image": "ym-6213918845.jpg",
+      "stock": 33,
+      "specs": {
+        "Емкость": "256 ГБ",
+        "Форм-фактор": "M.2",
+        "Назначение": "для настольного компьютера, для ноутбука, для ноутбука и настольного компьютера",
+        "Интерфейс": "PCI-E 3.0",
+        "Линейка": "NE"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/vnutrenniy-ssd-disk-kingspec-256gb-m2-nvme-pcie-30-x-ne-256-2280/102879547611",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4866824/2a0000019bc5bfd77741aaa1e5a759f5af5f/orig"
+    },
+    {
+      "id": 35,
+      "category": "appliances",
+      "name": "Умный телевизор Sber SDX-55U5500MBA",
+      "description": "Диагональ экрана: 54.3\". Разрешение HD: 3840 х 2160. Частота обновления: 60 Гц. Операционная система: Салют ТВ. Экосистема Умного дома: Умный дом Sber.",
+      "price": 25243,
+      "oldPrice": null,
+      "image": "ym-6522182856.png",
+      "stock": 12,
+      "specs": {
+        "Диагональ экрана": "54.3\"",
+        "Разрешение HD": "3840 х 2160",
+        "Частота обновления": "60 Гц",
+        "Операционная система": "Салют ТВ",
+        "Экосистема Умного дома": "Умный дом Sber"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/umnyy-televizor-sber-sdx-55u5500mba/235758081786011648",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20854085/pic0f8786d975f930f50af07216723527a5/orig"
+    },
+    {
+      "id": 36,
+      "category": "appliances",
+      "name": "Телевизор TCL 32\" V4C QLED HD HDR Google TV, Смарт ТВ, 32 дюйма",
+      "description": "Диагональ экрана: 32\". Разрешение HD: HD. Частота обновления: 60 Гц. Операционная система: Google TV. Экосистема Умного дома: TCL Home.",
+      "price": 14999,
+      "oldPrice": null,
+      "image": "ym-6524933447.png",
+      "stock": 5,
+      "specs": {
+        "Диагональ экрана": "32\"",
+        "Разрешение HD": "HD",
+        "Частота обновления": "60 Гц",
+        "Операционная система": "Google TV",
+        "Экосистема Умного дома": "TCL Home"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/televizor-tcl-32-v4c-qled-hd-hdr-google-tv-smart-tv-32-dyuyma/5542374899",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/7179065/pic8780f4978332324cfd9fcb27617d50b8/orig"
+    },
+    {
+      "id": 37,
+      "category": "appliances",
+      "name": "Проектор для фильмов, мини проектор, мультимедийный, проектор с Wi-Fi, Bluetooth, трансляция с телефона",
+      "description": "Тип: портативный. Версия: Global для РФ. Вариант поставки: без аккумулятора. Цвет товара: черный. Назначение: для домашнего кинотеатра.",
+      "price": 6881,
+      "oldPrice": null,
+      "image": "ym-5848221733.jpg",
+      "stock": 3,
+      "specs": {
+        "Тип": "портативный",
+        "Версия": "Global для РФ",
+        "Вариант поставки": "без аккумулятора",
+        "Цвет товара": "черный",
+        "Назначение": "для домашнего кинотеатра"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/proyektor-led-a10-dlya-filmov-multimediynyy-hd-4k-vstroyennyye-dinamiki-wi-fi-bluetooth-chernyy/5246431032",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20265645/2a0000019f6098e449efa78ad6fe5654c0d1/orig"
+    },
+    {
+      "id": 38,
+      "category": "appliances",
+      "name": "Проектор для фильмов, Wi-Fi, Bluetooth, Smart TV, FULL HD 4K, Android, Wi-FI 5G, HDMI",
+      "description": "Тип: портативный. Версия: Global для РФ. Цвет товара: серый. Разрешение проектора: 1280x720 HD. Контрастность: 1998:1.",
+      "price": 7561,
+      "oldPrice": null,
+      "image": "ym-5443172735.png",
+      "stock": 13,
+      "specs": {
+        "Тип": "портативный",
+        "Версия": "Global для РФ",
+        "Цвет товара": "серый",
+        "Разрешение проектора": "1280x720 HD",
+        "Контрастность": "1998:1"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/proyektor-dlya-filmov-wi-fi-bluetooth/5048751737",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/14098623/2a0000019c1fec3a2c4b7651fbca3511165d/orig"
+    },
+    {
+      "id": 39,
+      "category": "gaming",
+      "name": "Портативная игровая консоль Nintendo Switch 2 , 256GB",
+      "description": "Вид приставки: портативная. Поддержка внешних носителей: microSDXC. Игры в комплекте: без игр. Дополнительные опции: без аксессуаров. Объем встроенной памяти: 256 ГБ.",
+      "price": 49481,
+      "oldPrice": null,
+      "image": "ym-499764063.png",
+      "stock": 39,
+      "specs": {
+        "Вид приставки": "портативная",
+        "Поддержка внешних носителей": "microSDXC",
+        "Игры в комплекте": "без игр",
+        "Дополнительные опции": "без аксессуаров",
+        "Объем встроенной памяти": "256 ГБ"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/portativnaya-igrovaya-konsol-nintendo-switch-2--256gb--chernyyneon/6071491576",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/23157012/picb73cb43c4f07bb0c7023eef7749f66d2/orig"
+    },
+    {
+      "id": 40,
+      "category": "gaming",
+      "name": "DEFENDER Игровые наушники проводные с микрофоном",
+      "description": "Тип: проводные наушники. Конструкция: полноразмерные. Система активного шумоподавления (ANC): нет. Особенности: RGB подсветка, мягкие амбушюры, отключение микрофона, регулировка громкости. Тип крепления: оголовье.",
+      "price": 828,
+      "oldPrice": null,
+      "image": "ym-6225149336.jpg",
+      "stock": 46,
+      "specs": {
+        "Тип": "проводные наушники",
+        "Конструкция": "полноразмерные",
+        "Система активного шумоподавления (ANC)": "нет",
+        "Особенности": "RGB подсветка, мягкие амбушюры, отключение микрофона, регулировка громкости",
+        "Тип крепления": "оголовье"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/igrovyye-naushniki-s-mikrofonom-defender-quake-led-chernaya/5227473165",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/16439276/2a0000019ac4056391e75d9d2fdc71dd3a38/orig"
+    },
+    {
+      "id": 41,
+      "category": "gaming",
+      "name": "Геймпад для PS4 беспроводной, геймпад для ПК, джойстик для ПС 4 и телефона, Bluetooth, контроллер белый",
+      "description": "Совместимость: PS4. Тип подключения: беспроводной. Виброотдача и обратная связь: виброотдача. Цвет товара: белый,.",
+      "price": 1590,
+      "oldPrice": null,
+      "image": "ym-1445006522.png",
+      "stock": 17,
+      "specs": {
+        "Совместимость": "PS4",
+        "Тип подключения": "беспроводной",
+        "Виброотдача и обратная связь": "виброотдача",
+        "Цвет товара": "белый,"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/geympad-igrovoy-dualshock-4-belyy-besprovodnoy-dlya-ps4-bluetooth/103818283323",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/19789938/2a0000019eebe3a3ef0c085a4e88b593dfd0/orig"
+    },
+    {
+      "id": 42,
+      "category": "gaming",
+      "name": "VR-шлем MyPads 3D-очки Cardboard для смартфонов 4.0-5.5 дюймов, Android и iOS",
+      "description": "Назначение: для смартфонов. Особенности: легкая конструкция, удобная посадка.",
+      "price": 378,
+      "oldPrice": null,
+      "image": "ym-1344156389.png",
+      "stock": 3,
+      "specs": {
+        "Назначение": "для смартфонов",
+        "Особенности": "легкая конструкция, удобная посадка"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/shlem-virtualnoy-realnosti-mypads-3d--ochki-vr--shlem-cardboard-dlya-telefonov-40-55-dyuymov/102302553850",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/22307364/pic2191f9e9003b363174eb20c033fac739/orig"
+    },
+    {
+      "id": 43,
+      "category": "gaming",
+      "name": "Игровые наушники A4Tech Bloody G220S",
+      "description": "Тип: проводные наушники. Конструкция: полноразмерные. Особенности: отключение микрофона. Тип крепления: оголовье.",
+      "price": 1874,
+      "oldPrice": null,
+      "image": "ym-6277512475.jpg",
+      "stock": 49,
+      "specs": {
+        "Тип": "проводные наушники",
+        "Конструкция": "полноразмерные",
+        "Особенности": "отключение микрофона",
+        "Тип крепления": "оголовье"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/igrovyye-naushniki-a4tech-bloody-g220s/103466244032",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20269687/pic0c00ebfe664859a8b87b1ea7ffa698b6/orig"
+    },
+    {
+      "id": 44,
+      "category": "accessories",
+      "name": "Сетевое зарядное устройство Baseus PicoGo GaN Fast Charger 1C 45W EU Cosmic Black",
+      "description": "Разъем кабеля: USB Type-C. Мощность зарядки: 45 Вт. Стандарт быстрой зарядки: Qualcomm Quick Charge 2.0, Qualcomm Quick Charge 3.0, Samsung Super Fast Charging, Samsung Super Fast Charging 2.0, USB Power Delivery, USB Power Delivery 2.0, USB Power Delivery 3.0. Цвет товара: черный.",
+      "price": 969,
+      "oldPrice": null,
+      "image": "ym-4665403751.jpg",
+      "stock": 12,
+      "specs": {
+        "Разъем кабеля": "USB Type-C",
+        "Мощность зарядки": "45 Вт",
+        "Стандарт быстрой зарядки": "Qualcomm Quick Charge 2.0, Qualcomm Quick Charge 3.0, Samsung Super Fast Charging, Samsung Super Fast Charging 2.0, USB Power Delivery, USB Power Delivery 2.0, USB Power Delivery 3.0",
+        "Цвет товара": "черный"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/setevoye-zaryadnoye-ustroystvo-baseus-picogo-gan-fast-charger-1c-45w-eu-cosmic-black/4357247536",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20122707/pic02cf0e565f27f74bc121cce663fc28e3/orig"
+    },
+    {
+      "id": 45,
+      "category": "accessories",
+      "name": "Быстрое зарядное устройство 120W для Xiaomi, Redmi, Realme, Samsung, Honor, Huawei, VIVO, OPPO и многих других устройств",
+      "description": "Разъем кабеля: USB Type-C. Мощность зарядки: 120 Вт. Стандарт быстрой зарядки: OPPO VOOC 3.0, OPPO VOOC 4.0, Qualcomm Quick Charge 2.0, Qualcomm Quick Charge 3.0, Qualcomm Quick Charge 4+, Samsung Super Fast Charging, Samsung Super Fast Charging 2.0, Warp Charge. В составе комплекта: сетевой блок питания с разъемом, съемный кабель. Цвет товара: белый.",
+      "price": 866,
+      "oldPrice": null,
+      "image": "ym-5008308271.png",
+      "stock": 3,
+      "specs": {
+        "Разъем кабеля": "USB Type-C",
+        "Мощность зарядки": "120 Вт",
+        "Стандарт быстрой зарядки": "OPPO VOOC 3.0, OPPO VOOC 4.0, Qualcomm Quick Charge 2.0, Qualcomm Quick Charge 3.0, Qualcomm Quick Charge 4+, Samsung Super Fast Charging, Samsung Super Fast Charging 2.0, Warp Charge",
+        "В составе комплекта": "сетевой блок питания с разъемом, съемный кабель",
+        "Цвет товара": "белый"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/bystroye-zaryadnoye-ustroystvo-120w-dlya-xiaomi-redmi-realme-samsung-honor-huawei-vivo-oppo-i-mnogikh-drugikh/4814596004",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4012265/2a0000019ae1fbc8f1fcfbb6dcdd67d893ad/orig"
+    },
+    {
+      "id": 46,
+      "category": "accessories",
+      "name": "Повербанк Powerbank 10000mah с быстрой зарядкой, внешний аккумулятор для телефона iPhone, Xiaomi, Samsung, черный",
+      "description": "Совместимый бренд: быстрая зарядка. Тип аккумулятора: Li-Polymer. Напряжение: 12 В.",
+      "price": 802,
+      "oldPrice": null,
+      "image": "ym-400767816.png",
+      "stock": 31,
+      "specs": {
+        "Совместимый бренд": "быстрая зарядка",
+        "Тип аккумулятора": "Li-Polymer",
+        "Напряжение": "12 В"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/poverbank-powerbank-10000mah-s-bystroy-zaryadkoy-vneshniy-akkumulyator-dlya-telefona-iphone-xiaomi-samsung/103316400509",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/15131989/2a00000196da76d7b382acffa9c9f17d1015/orig"
+    },
+    {
+      "id": 47,
+      "category": "accessories",
+      "name": "Роутер Xiaomi Mi Router 4A",
+      "description": "Частоты Wi-Fi: 2.4 / 5 ГГц (одновременная работа). Подключение к интернету (WAN): Ethernet RJ-45. Скорость Ethernet: 100 Мбит/с. Стандарт Wi-Fi 802.11: ac (Wi-Fi 5), n (Wi-Fi 4). Тип связи: Wi-Fi.",
+      "price": 1782,
+      "oldPrice": null,
+      "image": "ym-6348224140.jpg",
+      "stock": 29,
+      "specs": {
+        "Частоты Wi-Fi": "2.4 / 5 ГГц (одновременная работа)",
+        "Подключение к интернету (WAN)": "Ethernet RJ-45",
+        "Скорость Ethernet": "100 Мбит/с",
+        "Стандарт Wi-Fi 802.11": "ac (Wi-Fi 5), n (Wi-Fi 4)",
+        "Тип связи": "Wi-Fi"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/wi-fi-marshrutizator-xiaomi-mi-router-4a-white/5790728323",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20170061/2a0000019eeee5ebc8dbadac10e581f91d8e/orig"
+    },
+    {
+      "id": 48,
+      "category": "accessories",
+      "name": "Веб-камера Hi W001",
+      "description": "Совместимость с ОС: Windows. Фокусировка: автоматическая фокусировка. Разъемы и интерфейсы: USB 2.0. Максимальная частота кадров: 30 Гц. Угол обзора объектива: 90 °.",
+      "price": 446,
+      "oldPrice": null,
+      "image": "ym-1258906739.jpg",
+      "stock": 13,
+      "specs": {
+        "Совместимость с ОС": "Windows",
+        "Фокусировка": "автоматическая фокусировка",
+        "Разъемы и интерфейсы": "USB 2.0",
+        "Максимальная частота кадров": "30 Гц",
+        "Угол обзора объектива": "90 °"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/web-kamera-hi-w001/4465711677",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/20122707/pic3b5ab1d178a9cdce7639ee1feb271c67/orig"
+    },
+    {
+      "id": 49,
+      "category": "accessories",
+      "name": "Веб-камера Full HD 1080p с микрофоном USB 2.0 для компьютера, ноутбука, видеозвонков и конференций",
+      "description": "Максимальное разрешение: 1920x1080. Совместимость с ОС: MacOS, Windows. Фокусировка: ручная фокусировка. Опции и комплект: крепление на мониторе. Разъемы и интерфейсы: USB 2.0.",
+      "price": 536,
+      "oldPrice": null,
+      "image": "ym-6163036083.jpg",
+      "stock": 48,
+      "specs": {
+        "Максимальное разрешение": "1920x1080",
+        "Совместимость с ОС": "MacOS, Windows",
+        "Фокусировка": "ручная фокусировка",
+        "Опции и комплект": "крепление на мониторе",
+        "Разъемы и интерфейсы": "USB 2.0"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/veb-kamera-full-hd-1080p-s-mikrofonom-usb-20-dlya-kompyutera-noutbuka-videozvonkov-i-konferentsiy/6163036084",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/21156723/2a000001a02f596bef51f214fcdcf16bc9e1/orig"
+    },
+    {
+      "id": 50,
+      "category": "audio",
+      "name": "Наушники True Wireless HUAWEI FreeBuds SE 2 Black",
+      "description": "Тип: беспроводные TWS-наушники. Конструкция: вкладыши. Версия Bluetooth: 5.3.",
+      "price": 3172,
+      "oldPrice": null,
+      "image": "ym-5377256917.jpg",
+      "stock": 10,
+      "specs": {
+        "Тип": "беспроводные TWS-наушники",
+        "Конструкция": "вкладыши",
+        "Версия Bluetooth": "5.3"
+      },
+      "featured": true,
+      "source": "https://market.yandex.ru/card/naushniki-true-wireless-huawei-freebuds-se-2-black/5268060964",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/18332539/2a0000019a14378687ad9861ed0e22c2ba60/orig"
+    },
+    {
+      "id": 51,
+      "category": "audio",
+      "name": "Наушники беспроводные Hoco EW77, Bluetooth, USB Type-C, белые",
+      "description": "Тип: беспроводные наушники. Конструкция: внутриканальные. Особенности: Surround Sound. Тип крепления: В ушной раковине. Версия Bluetooth: 5.4.",
+      "price": 852,
+      "oldPrice": null,
+      "image": "ym-5845326469.jpg",
+      "stock": 16,
+      "specs": {
+        "Тип": "беспроводные наушники",
+        "Конструкция": "внутриканальные",
+        "Особенности": "Surround Sound",
+        "Тип крепления": "В ушной раковине",
+        "Версия Bluetooth": "5.4"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/naushniki-besprovodnyye-hoco-ew77-bluetooth-usb-type-c-belyye/4707465831",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12628328/2a00000199e93be534d65a458b3676e29940/orig"
+    },
+    {
+      "id": 52,
+      "category": "audio",
+      "name": "Саундбар для телевизора Hisense HS2000, 240 Вт, DTS Virtual: X, Bluetooth 5.3, режим ТВ",
+      "description": "Звуковая схема: 2.1. Беспроводные интерфейсы: Bluetooth.",
+      "price": 6362,
+      "oldPrice": null,
+      "image": "ym-5838100815.jpg",
+      "stock": 41,
+      "specs": {
+        "Звуковая схема": "2.1",
+        "Беспроводные интерфейсы": "Bluetooth"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/saundbar-zvukovaya-panel-hisense-hs2000-240-vt-dts-virtual-x-bluetooth-53-rezhim-tv/4441502432",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/5299050/2a0000019a331eab8ddc9e91d7dea7b0f391/orig"
+    },
+    {
+      "id": 53,
+      "category": "audio",
+      "name": "Саундбар для телевизора Hisense HS1000, Dolby Digital Plus 7.1 и DTS Virtual: X, режим TV Mode, Bluetooth 5.3",
+      "description": "Беспроводные интерфейсы: Bluetooth.",
+      "price": 4649,
+      "oldPrice": null,
+      "image": "ym-5627020969.jpg",
+      "stock": 18,
+      "specs": {
+        "Беспроводные интерфейсы": "Bluetooth"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/saundbar-zvukovaya-panel-hisense-hs1000-dolby-digital-plus-71-i-dts-virtual-x-rezhim-tv-mode-bluetooth-53/4447684142",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/17657724/2a0000019c45a839dab6a91c463f95c44295/orig"
+    },
+    {
+      "id": 54,
+      "category": "audio",
+      "name": "Портативная колонка COMMO STAGE 5, мощность 5 Вт, Bluetooth, влагозащита, серо-зеленый",
+      "description": "Вид: моно. Суммарная мощность (подробно): 5 Вт. Питание: автономное. Беспроводные интерфейсы: Bluetooth. Разъемы и интерфейсы: неприменимо.",
+      "price": 2148,
+      "oldPrice": null,
+      "image": "ym-1178386117.png",
+      "stock": 51,
+      "specs": {
+        "Вид": "моно",
+        "Суммарная мощность (подробно)": "5 Вт",
+        "Питание": "автономное",
+        "Беспроводные интерфейсы": "Bluetooth",
+        "Разъемы и интерфейсы": "неприменимо"
+      },
+      "featured": false,
+      "source": "https://market.yandex.ru/card/commo-stage-5-sero-zelenyy/4399135712",
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/19829542/pic920ff62375588af6b84f408d18e476cd/orig"
+    }
+  ]
+}

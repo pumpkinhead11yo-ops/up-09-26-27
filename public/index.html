@@ -1,123 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="light"><head>
+<html lang="ru">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('technomir-theme');
+        document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
   <title>Техномир – магазин электроники в Оренбурге</title>
   <meta name="description" content="«Техномир» – магазин электроники в Оренбурге: смартфоны, ноутбуки, комплектующие, бытовая техника, игры и аудио. Гарантия до 2 лет, доставка в день заказа.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/pages.css">
 </head>
-<body class="page-home is-loaded"><div class="bg-scene" aria-hidden="true">
-    <span class="bg-blob bg-blob-1" style="transform: translate3d(0px, 0px, 0px);"></span>
-    <span class="bg-blob bg-blob-2" style="transform: translate3d(0px, 0px, 0px);"></span>
-    <span class="bg-blob bg-blob-3" style="transform: translate3d(0px, 0px, 0px);"></span></div>
+<body class="page-home">
 
-  
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="loader-word">техно<span>мир</span></div>
+    <div class="loader-bar"><span></span></div>
+  </div>
 
-  <header id="shapka">
-      <div class="header" id="shapka-bar">
-        <div class="box shapka-in">
-          
-    <a class="brand " href="/" aria-label="Техномир – на главную">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 34 34" fill="none">
-          <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
-          <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
-        </svg>
-      </span>
-      <span class="brand-word">техномир<span>.</span></span>
-    </a>
-
-          <nav class="nav" aria-label="Основная навигация"><a class="nav-link " href="/"><span>Главная</span></a><a class="nav-link " href="/catalog.html"><span>Каталог</span></a><a class="nav-link " href="/about.html"><span>О нас</span></a><a class="nav-link " href="/contacts.html"><span>Контакты</span></a></nav>
-
-          <div class="shapka-acts">
-            <button class="icon-btn" type="button" data-search-open="" aria-label="Поиск" title="Поиск">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
-            </button>
-            <a class="icon-btn cmp-link" href="/compare.html" title="Сравнение" aria-label="Сравнение товаров">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg><span class="action-count count-srav is-empty">0</span>
-            </a>
-            <button class="icon-btn theme-toggle" type="button" data-theme-toggle="" aria-label="Тёмная тема" title="Тёмная тема" aria-pressed="false">
-              <span class="theme-moon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="moon" class="lucide lucide-moon" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></span>
-              <span class="theme-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sun" class="lucide lucide-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span>
-            </button>
-            <a class="icon-btn login-btn" href="/login.html" title="Войти" aria-label="Войти">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-      </a>
-            <a class="cart-btn" href="/cart.html" aria-label="Корзина">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-bag" class="lucide lucide-shopping-bag" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-              <span class="cart-btn-text">Корзина</span>
-              <span class="cart-count is-empty">0</span>
-            </a>
-            <button class="burger" id="burger-btn" type="button" aria-label="Меню" aria-expanded="false">
-              <span></span><span></span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-        <div class="menu-head">
-          <span class="mono">Навигация</span>
-          <span class="mono">Оренбург · 09:00–21:00</span>
-        </div>
-        <nav class="menu-nav" aria-label="Мобильная навигация">
-          
-            <a class="menu-link" href="/" style="--i:0">
-              <span>Главная</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-            </a>
-            <a class="menu-link" href="/catalog.html" style="--i:1">
-              <span>Каталог</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-            </a>
-            <a class="menu-link" href="/about.html" style="--i:2">
-              <span>О нас</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-            </a>
-            <a class="menu-link" href="/contacts.html" style="--i:3">
-              <span>Контакты</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-            </a>
-          <a class="menu-link" href="/compare.html" style="--i:4">
-            <span>Сравнение</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-          </a>
-          <a class="menu-link" href="/track.html" style="--i:5">
-            <span>Отследить заказ</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-          </a>
-          <a class="menu-link" href="/login.html" style="--i:6">
-              <span>Войти в аккаунт</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
-            </a>
-        </nav>
-        <div class="menu-foot">
-          <a href="tel:+73532201234"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +7 (3532) 20-12-34</a>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> ТРЦ «Территория Севера», пр-кт Дзержинского, 23</span>
-        </div>
-      </div>
-
-      <div class="poisk-panel" id="poisk-panel" aria-hidden="true">
-        <div class="box search-inner">
-          <div class="search-head">
-            <button class="icon-btn icon-btn-dark" type="button" data-search-close="" aria-label="Закрыть поиск"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
-          </div>
-          <form class="search-form" action="/catalog.html" method="get" role="search">
-            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
-            <input type="search" name="q" placeholder="Смартфон, ноутбук, наушники…" aria-label="Поиск по каталогу" autocomplete="off">
-            <button class="btn btn-acid" type="submit">Найти <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
-          </form>
-          <div class="search-tags">
-            <span class="mono">Популярное:</span>
-            <a href="/catalog.html?q=смартфон">смартфоны</a>
-            <a href="/catalog.html?q=ноутбук">ноутбуки</a>
-            <a href="/catalog.html?q=наушники">наушники</a>
-            <a href="/catalog.html?q=телевизор">телевизоры</a>
-            <a href="/catalog.html?q=консоль">консоли</a>
-          </div>
-        </div>
-      </div></header>
+  <header id="shapka"></header>
 
   <main>
 
@@ -125,26 +39,26 @@
       <div class="hero-aurora" aria-hidden="true"></div>
 
       <div class="box hero-box">
-        <div class="hero-copy hero-copy-wide is-in" style="--d:60ms"-bound="">
+        <div class="hero-copy hero-copy-wide" data-reveal style="--d:60ms">
           <h1 class="hero-title hero-title-big">
             Техника,<br>
             которая <span class="hero-gradient">под вас.</span>
           </h1>
 
-          <p class="hero-lead hero-lead-big is-in" style="--d:110ms"-bound="">
+          <p class="hero-lead hero-lead-big" data-reveal style="--d:110ms">
             Смартфоны, ноутбуки, звук и техника для дома. Проверяем каждое устройство
             и настраиваем при выдаче – чтобы вы просто пользовались.
           </p>
 
-          <form class="hero-search glass" action="/catalog.html" method="get" role="search" style="--d:160ms"-bound="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <form class="hero-search glass" action="/catalog.html" method="get" role="search" data-reveal style="--d:160ms">
+            <i data-lucide="search"></i>
             <input type="search" name="q" placeholder="Что ищем сегодня? Например, наушники" aria-label="Поиск по каталогу" autocomplete="off">
             <button class="search-go" type="submit" aria-label="Найти">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+              <i data-lucide="arrow-up-right"></i>
             </button>
           </form>
 
-          <nav class="hero-chips" aria-label="Популярные категории" style="--d:200ms"-bound="">
+          <nav class="hero-chips" aria-label="Популярные категории" data-reveal style="--d:200ms">
             <span class="chips-label">Популярное</span>
             <a href="/catalog.html?q=смартфон">Смартфоны</a>
             <a href="/catalog.html?q=ноутбук">Ноутбуки</a>
@@ -168,10 +82,10 @@
           </div>
         </div>
 
-        <div class="hero-foot" style="--d:260ms"-bound="">
-          <div class="hero-foot-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg><span>Гарантия до 2 лет</span></div>
-          <div class="hero-foot-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="truck" class="lucide lucide-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg><span>Доставка в день заказа</span></div>
-          <div class="hero-foot-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings-2" class="lucide lucide-settings-2"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg><span>Проверка перед выдачей</span></div>
+        <div class="hero-foot" data-reveal style="--d:260ms">
+          <div class="hero-foot-item"><i data-lucide="shield-check"></i><span>Гарантия до 2 лет</span></div>
+          <div class="hero-foot-item"><i data-lucide="truck"></i><span>Доставка в день заказа</span></div>
+          <div class="hero-foot-item"><i data-lucide="settings-2"></i><span>Проверка перед выдачей</span></div>
         </div>
       </div>
     </section>
@@ -186,54 +100,14 @@
           <div class="head-acts">
             <a class="btn btn-ghost" href="/catalog.html">
               Все товары
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              <i data-lucide="arrow-right"></i>
             </a>
           </div>
         </div>
 
         <div class="kat-grid" id="kat-grid">
-        <a class="kat-card" href="/catalog.html?category=smartphones" style="--d:0ms"-bound="">
-          <img class="kat-img img-lazy is-ready" src="/images/products/smartphone.jpg" alt="Смартфоны и гаджеты" loading="lazy" decoding="async"="1">
-          <span class="kat-bottom">
-            <h3>Смартфоны и гаджеты</h3>
-            <span class="kat-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
-          </span>
-        </a>
-        <a class="kat-card" href="/catalog.html?category=parts" style="--d:50ms"-bound="">
-          <img class="kat-img img-lazy is-ready" src="/images/products/laptop.jpg" alt="Компьютеры и периферия" loading="lazy" decoding="async"="1">
-          <span class="kat-bottom">
-            <h3>Компьютеры и периферия</h3>
-            <span class="kat-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
-          </span>
-        </a>
-        <a class="kat-card" href="/catalog.html?category=appliances" style="--d:100ms"-bound="">
-          <img class="kat-img img-lazy is-ready" src="/images/products/tv1.jpg" alt="Бытовая электроника" loading="lazy" decoding="async"="1">
-          <span class="kat-bottom">
-            <h3>Бытовая электроника</h3>
-            <span class="kat-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
-          </span>
-        </a>
-        <a class="kat-card" href="/catalog.html?category=gaming" style="--d:150ms"-bound="">
-          <img class="kat-img img-lazy is-ready" src="/images/products/console.jpg" alt="Игры и консоли" loading="lazy" decoding="async"="1">
-          <span class="kat-bottom">
-            <h3>Игры и консоли</h3>
-            <span class="kat-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
-          </span>
-        </a>
-        <a class="kat-card" href="/catalog.html?category=accessories" style="--d:200ms"-bound="">
-          <img class="kat-img img-lazy is-ready" src="/images/products/keyboard.jpg" alt="Аксессуары" loading="lazy" decoding="async"="1">
-          <span class="kat-bottom">
-            <h3>Аксессуары</h3>
-            <span class="kat-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
-          </span>
-        </a>
-        <a class="kat-card" href="/catalog.html?category=audio" style="--d:250ms"-bound="">
-          <img class="kat-img img-lazy is-ready" src="/images/products/headphones.jpg" alt="Аудио и звук" loading="lazy" decoding="async"="1">
-          <span class="kat-bottom">
-            <h3>Аудио и звук</h3>
-            <span class="kat-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
-          </span>
-        </a></div>
+          <div class="loading"><span class="spinner"></span> Загрузка категорий</div>
+        </div>
       </div>
     </section>
 
@@ -247,308 +121,14 @@
           <div class="head-acts">
             <a class="btn btn-outline" href="/catalog.html">
               Смотреть каталог
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              <i data-lucide="arrow-right"></i>
             </a>
           </div>
         </div>
 
         <div class="tovary" id="hit-grid">
-    <article class="tovar-card" data-tilt="" style="--d:0ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=50" aria-label="Наушники True Wireless HUAWEI FreeBuds SE 2 Black" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-5377256917.jpg" alt="Наушники True Wireless HUAWEI FreeBuds SE 2 Black" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
+          <div class="loading"><span class="spinner"></span> Загрузка товаров</div>
         </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Аудио и звук</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=50">Наушники True Wireless HUAWEI FreeBuds SE 2 Black</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>3&nbsp;172&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="50" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:60ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=40" aria-label="DEFENDER Игровые наушники проводные с микрофоном" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-6225149336.jpg" alt="DEFENDER Игровые наушники проводные с микрофоном" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Игры и консоли</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=40">DEFENDER Игровые наушники проводные с микрофоном</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>828&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="40" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:120ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=35" aria-label="Умный телевизор Sber SDX-55U5500MBA" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-6522182856.png" alt="Умный телевизор Sber SDX-55U5500MBA" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Бытовая электроника</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=35">Умный телевизор Sber SDX-55U5500MBA</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>25&nbsp;243&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="35" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:180ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=31" aria-label="Игровая видеокарта MSI GAMING X GTX1050 Ti GAMING X 4G 4 Гб GDDR5" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-5769703987.jpg" alt="Игровая видеокарта MSI GAMING X GTX1050 Ti GAMING X 4G 4 Гб GDDR5" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Компьютеры и периферия</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=31">Игровая видеокарта MSI GAMING X GTX1050 Ti GAMING X 4G 4 Гб GDDR5</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>13&nbsp;580&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="31" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:0ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=28" aria-label="16&quot; Ноутбук LUNNEN Ground 16, AMD Ryzen 7 7730U, RAM 16 ГБ, SSD 512 ГБ, 1920x1200, Windows 11, Sargasso Sea, LL6FAWL07" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-816830091.png" alt="16&quot; Ноутбук LUNNEN Ground 16, AMD Ryzen 7 7730U, RAM 16 ГБ, SSD 512 ГБ, 1920x1200, Windows 11, Sargasso Sea, LL6FAWL07" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Компьютеры и периферия</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=28">16" Ноутбук LUNNEN Ground 16, AMD Ryzen 7 7730U, RAM 16 ГБ, SSD 512 ГБ, 1920x1200, Windows 11, Sargasso Sea, LL6FAWL07</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>59&nbsp;591&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="28" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:60ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=25" aria-label="Смарт часы HUAWEI Band 11 Pro , Голубой цвет, Ростест (ЕАС)." data-cursor-label="Смотреть">
-          <img src="/images/products/ym-5565617177.jpg" alt="Смарт часы HUAWEI Band 11 Pro , Голубой цвет, Ростест (ЕАС)." loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Смартфоны и гаджеты</span>
-          <span class="tovar-stars">★ 4</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=25">Смарт часы HUAWEI Band 11 Pro , Голубой цвет, Ростест (ЕАС).</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>3&nbsp;968&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="25" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:120ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=22" aria-label="Смартфон POCO C81 Pro 4GB/128GB, Android , экран 6,9&quot;, 120Hz, черный" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-6375639016.jpg" alt="Смартфон POCO C81 Pro 4GB/128GB, Android , экран 6,9&quot;, 120Hz, черный" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Смартфоны и гаджеты</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=22">Смартфон POCO C81 Pro 4GB/128GB, Android , экран 6,9", 120Hz, черный</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>15&nbsp;143&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="22" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article>
-    <article class="tovar-card" data-tilt="" style="--d:180ms"-bound="">
-      <div class="tovar-media">
-        <a class="tovar-link" href="/product.html?id=17" aria-label="Игровая консоль для телевизора , 20000 ретро игр, 4K , игры\ Игровая приставка Game Stick" data-cursor-label="Смотреть">
-          <img src="/images/products/ym-1235894574.png" alt="Игровая консоль для телевизора , 20000 ретро игр, 4K , игры\ Игровая приставка Game Stick" loading="lazy" decoding="async"="1" class="img-lazy is-ready">
-        </a>
-        <div class="tovar-badges">
-          
-          <span class="tag tag-acid">Хит</span>
-          
-          
-        </div>
-        <span class="tovar-foto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg> Смотреть</span>
-      </div>
-
-      <div class="tovar-body">
-        <div class="tovar-meta">
-          <span>Игры и консоли</span>
-          <span class="tovar-stars">★ 5</span>
-        </div>
-        <h3 class="tovar-title"><a href="/product.html?id=17">Игровая консоль для телевизора , 20000 ретро игр, 4K , игры\ Игровая приставка Game Stick</a></h3>
-        <div class="tovar-buy">
-          <div class="tovar-price">
-            <strong>1&nbsp;355&nbsp;₽</strong>
-            
-          </div>
-          <span class="tovar-stock">в наличии</span>
-        </div>
-        <div class="tovar-acts">
-          <button class="btn btn-blue btn-sm tovar-cta" type="button">
-            <span data-cart-label="">В корзину</span>
-          </button>
-          <button class="tovar-compare " type="button" data-compare-id="17" aria-pressed="false" aria-label="Сравнить товар" title="Сравнить товар">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg>
-          </button>
-        </div>
-      </div>
-    </article></div>
       </div>
     </section>
 
@@ -564,7 +144,7 @@
             <p>Оценим технику за 15 минут и зачтём сумму в оплату. Принимаем смартфоны, ноутбуки, консоли и аудио.</p>
           </div>
           <span class="plate-stamp">Рассрочка 0%</span>
-          <span class="plate-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+          <span class="plate-circle"><i data-lucide="arrow-up-right"></i></span>
         </a>
 
         <a class="plate plate-dark" href="/catalog.html?category=parts">
@@ -577,7 +157,7 @@
             <h3>Соберём ПК<br>под задачу.</h3>
             <p>Игры, монтаж, работа с 3D. Подберём комплектующие, соберём и протестируем до выдачи.</p>
           </div>
-          <span class="plate-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+          <span class="plate-circle"><i data-lucide="arrow-up-right"></i></span>
         </a>
       </div>
     </section>
@@ -652,54 +232,14 @@
           <div class="head-acts">
             <a class="btn btn-ghost" href="/catalog.html">
               Выбрать технику
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              <i data-lucide="arrow-right"></i>
             </a>
           </div>
         </div>
 
         <div class="review-grid" id="otzyvy-grid">
-        <article class="review-tile"-bound="">
-          <div class="review-top">
-            <span class="stars " aria-label="Рейтинг 4 из 5"><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span><span class="star ">★</span></span>
-            <span class="review-quote" aria-hidden="true">“</span>
-          </div>
-          <p>Обратная связь приятная, педали не скользят. Для начала в симрейсинге отлично.</p>
-          <div class="review-author">
-            <span class="review-avatar">В</span>
-            <div>
-              <b>Владислав Н.</b>
-              <span><a href="/product.html?id=41">Геймпад для PS4 беспроводной, геймпад для ПК, джойстик для ПС 4 и телефона, Bluetooth, контроллер белый</a></span>
-            </div>
-          </div>
-        </article>
-        <article class="review-tile"-bound="">
-          <div class="review-top">
-            <span class="stars " aria-label="Рейтинг 5 из 5"><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span></span>
-            <span class="review-quote" aria-hidden="true">“</span>
-          </div>
-          <p>Перешёл с прошлого флагмана – разница огромная. Экран яркий, камера ночью снимает без шума. Заряжается меньше чем за полчаса.</p>
-          <div class="review-author">
-            <span class="review-avatar">А</span>
-            <div>
-              <b>Алексей Г.</b>
-              <span><a href="/product.html?id=22">Смартфон POCO C81 Pro 4GB/128GB, Android , экран 6,9", 120Hz, черный</a></span>
-            </div>
-          </div>
-        </article>
-        <article class="review-tile"-bound="">
-          <div class="review-top">
-            <span class="stars " aria-label="Рейтинг 5 из 5"><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span><span class="star is-on">★</span></span>
-            <span class="review-quote" aria-hidden="true">“</span>
-          </div>
-          <p>Пауэрбанк реально заряжает ноутбук. Дисплей с процентом – мелочь, а приятно.</p>
-          <div class="review-author">
-            <span class="review-avatar">Н</span>
-            <div>
-              <b>Наталья Д.</b>
-              <span><a href="/product.html?id=21">Внешний аккумулятор Type-C, 2xUSB, MicroUSB 5000 мА-ч, 10Вт, черный, AXXA 3459</a></span>
-            </div>
-          </div>
-        </article></div>
+          <div class="loading"><span class="spinner"></span> Загрузка отзывов</div>
+        </div>
       </div>
     </section>
 
@@ -741,7 +281,7 @@
             <p>Позвоните или напишите – подберём модель под задачи и бюджет. Консультация бесплатная, без навязывания.</p>
             <div class="btn-row">
               <a class="btn btn-dark" href="tel:+73532201234">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <i data-lucide="phone"></i>
                 +7 (3532) 20-12-34
               </a>
               <a class="btn btn-ghost" href="/contacts.html">Написать нам</a>
@@ -753,81 +293,95 @@
     </section>
   </main>
 
-  <footer id="podval">
-      <div class="footer">
-        <div class="box">
-          <div class="podval-top">
-            <div class="podval-lead">
-              <h2>Техника, которой<br>хочется пользоваться.</h2>
-            </div>
-            <form class="podval-sub">
-              <label for="podval-email" class="mono">Письма о новинках и скидках</label>
-              <div class="podval-sub-row">
-                <input id="podval-email" type="email" placeholder="you@example.com" required="" autocomplete="email">
-                <button class="btn btn-acid" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
-              </div>
-            </form>
+  <footer id="podval"></footer>
+
+  <script src="/lib/lucide.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    const CATEGORY_IMAGES = {
+      smartphones: '/images/products/smartphone.jpg',
+      parts: '/images/products/laptop.jpg',
+      appliances: '/images/products/tv1.jpg',
+      gaming: '/images/products/console.jpg',
+      accessories: '/images/products/keyboard.jpg',
+      audio: '/images/products/headphones.jpg'
+    };
+
+    api('/api/categories').then(categories => {
+      const grid = document.getElementById('kat-grid');
+      grid.innerHTML = categories.map((category, index) => `
+        <a class="kat-card" href="/catalog.html?category=${encodeURIComponent(category.slug)}" data-reveal style="--d:${index * 50}ms">
+          <img class="kat-img"
+              src="${CATEGORY_IMAGES[category.slug] || '/images/products/test.jpg'}"
+              alt="${escapeHtml(category.name)}"
+              loading="lazy" decoding="async" data-lazy-anim>
+          <span class="kat-bottom">
+            <h3>${escapeHtml(category.name)}</h3>
+            <span class="kat-arrow">${icon('arrow-up-right')}</span>
+          </span>
+        </a>`).join('');
+      initLazyImages(grid);
+      refreshIcons();
+      Remotion.scan(grid);
+    }).catch(error => {
+      document.getElementById('kat-grid').innerHTML = `
+        <div class="empty-state empty-wide">
+          <span class="empty-ico">${icon('triangle-alert')}</span>
+          <h3>Категории временно недоступны</h3>
+          <p>${escapeHtml(error.message)}</p>
+        </div>`;
+      refreshIcons();
+    });
+
+    api('/api/products?featured=1').then(products => {
+      renderProductsGrid(document.getElementById('hit-grid'), products.slice(0, 8));
+    }).catch(() => {
+      document.getElementById('hit-grid').innerHTML = `
+        <div class="empty-state empty-wide">
+          <span class="empty-ico">${icon('triangle-alert')}</span>
+          <h3>Не удалось загрузить товары</h3>
+          <p>Обновите страницу через минуту.</p>
+        </div>`;
+      refreshIcons();
+    });
+
+    api('/api/reviews/latest?limit=3').then(reviews => {
+      const grid = document.getElementById('otzyvy-grid');
+      if (!reviews.length) {
+        grid.innerHTML = `
+          <div class="empty-state empty-wide">
+            <span class="empty-ico">${icon('message-square')}</span>
+            <h3>Отзывов пока нет</h3>
+            <p>Станьте первым покупателем, который поделится впечатлениями.</p>
+          </div>`;
+        refreshIcons();
+        return;
+      }
+      grid.innerHTML = reviews.map(review => `
+        <article class="review-tile" data-reveal>
+          <div class="review-top">
+            ${stars(review.rating)}
+            <span class="review-quote" aria-hidden="true">“</span>
           </div>
-
-          <div class="podval-grid">
-            <div class="podval-brand">
-              
-    <a class="brand brand-light" href="/" aria-label="Техномир – на главную">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 34 34" fill="none">
-          <path d="M7 8.5h20M17 8.5v18" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
-          <path d="M23 22.5l4 4" stroke="currentColor" stroke-width="4.6" stroke-linecap="square"></path>
-        </svg>
-      </span>
-      <span class="brand-word">техномир<span>.</span></span>
-    </a>
-              <p>Магазин электроники в Оренбурге. Подбираем, проверяем и настраиваем технику – с гарантией до двух лет.</p>
-              <div class="podval-socials">
-                <a href="https://vk.com" target="_blank" rel="noopener" aria-label="VK"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="at-sign" class="lucide lucide-at-sign" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path></svg></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="play" class="lucide lucide-play" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></a>
-              </div>
-            </div>
-
-            <div class="podval-col">
-              <h4 class="mono">Каталог</h4>
-              <a href="/catalog.html?category=smartphones">Смартфоны и гаджеты</a><a href="/catalog.html?category=parts">Компьютеры и периферия</a><a href="/catalog.html?category=appliances">Бытовая электроника</a><a href="/catalog.html?category=gaming">Игры и консоли</a><a href="/catalog.html?category=accessories">Аксессуары</a><a href="/catalog.html?category=audio">Аудио и звук</a>
-            </div>
-
-            <div class="podval-col">
-              <h4 class="mono">Покупателям</h4>
-              <a href="/catalog.html">Все товары</a>
-              <a href="/compare.html">Сравнение</a>
-              <a href="/cart.html">Корзина</a>
-              <a href="/track.html">Отслеживание заказа</a>
-              <a href="/profile.html">Личный кабинет</a>
-            </div>
-
-            <div class="podval-col foot-contacts">
-              <h4 class="mono">Магазин</h4>
-              <a href="tel:+73532201234">+7 (3532) 20-12-34</a>
-              <a href="mailto:info@technomir.ru">info@technomir.ru</a>
-              <p>г. Оренбург,<br>пр-кт Дзержинского, 23<br>ТРЦ «Территория Севера»</p>
-              <p>Пн–Сб 09:00–21:00<br>Вс 10:00–20:00</p>
+          <p>${escapeHtml(review.text)}</p>
+          <div class="review-author">
+            <span class="review-avatar">${escapeHtml(review.author_name.slice(0, 1).toUpperCase())}</span>
+            <div>
+              <b>${escapeHtml(review.author_name)}</b>
+              <span><a href="/product.html?id=${review.product_id}">${escapeHtml(review.product_name)}</a></span>
             </div>
           </div>
-
-          <div class="foot-logo" aria-hidden="true">техномир<span>*</span></div>
-        </div>
-      </div></footer>
-
-  
-  
-  
-
-
-<div id="cmp-bar" class="cmp-bar" hidden="">
-      <span class="cmp-bar-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-compare" class="lucide lucide-git-compare" aria-hidden="true"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><path d="M11 18H8a2 2 0 0 1-2-2V9"></path></svg> В сравнении: <b class="cmp-bar-count">0</b></span>
-      <div class="cmp-bar-acts">
-        <button class="cmp-bar-clear" type="button">Очистить</button>
-        <a class="btn btn-acid btn-sm" href="/compare.html">Сравнить <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
-      </div></div><nav id="dock" class="dock" aria-label="Быстрая навигация">
-      <a class="dock-link " href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="house" class="lucide lucide-house" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span>Главная</span></a>
-      <a class="dock-link " href="/catalog.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-grid" class="lucide lucide-layout-grid" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg><span>Каталог</span></a>
-      <button class="dock-link" type="button" data-search-open=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><span>Поиск</span></button>
-      <a class="dock-link " href="/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-bag" class="lucide lucide-shopping-bag" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span>Корзина</span><span class="dock-count cart-count is-empty">0</span></a>
-      <a class="dock-link " href="/login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span>Войти</span></a></nav><button class="to-top" type="button" aria-label="Наверх"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button><div class="cursor-fill" style="transform: translate3d(381px, 214px, 0px) translate(-50%, -50%);"></div><div class="cursor-ui" style="transform: translate3d(381px, 214px, 0px) translate(-50%, -50%);"><span class="cursor-label"></span></div><script src="/js/script.js" defer></script></body></html>
+        </article>`).join('');
+      refreshIcons();
+      Remotion.scan(grid);
+    }).catch(() => {
+      document.getElementById('otzyvy-grid').innerHTML = `
+        <div class="empty-state empty-wide">
+          <span class="empty-ico">${icon('triangle-alert')}</span>
+          <h3>Отзывы временно недоступны</h3>
+        </div>`;
+      refreshIcons();
+    });
+  </script>
+</body>
+</html>
